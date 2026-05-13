@@ -1,0 +1,31 @@
+{
+  "articles": [
+    {
+      "slug": "how-we-dial-our-espresso",
+      "postKey": "one",
+      "images": [
+        "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg",
+        "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+        "/images/96a8093f-8d58-475a-8a60-8b46e2d6da79.jpg.jpeg"
+      ]
+    },
+    {
+      "slug": "seasonal-syrup-in-house",
+      "postKey": "two",
+      "images": [
+        "/images/IMG-20251130-WA0006.jpg.jpeg",
+        "/images/IMG-20251130-WA0007.jpg.jpeg"
+      ]
+    },
+    {
+      "slug": "welcoming-mornings-at-latana",
+      "postKey": "three",
+      "images": [
+        "/images/DSC02919.JPG.jpeg",
+        "/images/DSC02992.JPG.jpeg",
+        "/images/DSC03006.JPG.jpeg",
+        "/images/DSC03200.JPG.jpeg"
+      ]
+    }
+  ]
+}

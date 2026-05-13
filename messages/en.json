@@ -1,0 +1,317 @@
+{
+  "brand": {
+    "name": "Latana",
+    "tag": "Cafe"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "services": "Services",
+    "blog": "Blog",
+    "about": "About",
+    "shop": "Shop",
+    "shopMain": "Shop",
+    "shopSingle": "Single product",
+    "shopCart": "Cart",
+    "shopCheckout": "Checkout",
+    "contact": "Contact",
+    "toggleNav": "Menu",
+    "cartCount": "1",
+    "book": "Book a table"
+  },
+  "common": {
+    "viewMore": "View more",
+    "viewMap": "Open in Google Maps",
+    "pdfMenu": "Download PDF menu"
+  },
+  "servicesSection": {
+    "sub": "Service",
+    "title": "Why guests choose Latana",
+    "lead": "Ordering, atmosphere, and coffee — handled with care."
+  },
+  "gallerySection": {
+    "sub": "Discover",
+    "title": "Photo gallery",
+    "lead": "A glimpse inside our cafe."
+  },
+  "menuPage": {
+    "metaTitle": "Menu",
+    "metaDescription": "Explore our full menu — starters, mains, desserts, and drinks at Latana Cafe."
+  },
+  "galleryPage": {
+    "metaTitle": "Gallery",
+    "metaDescription": "Browse photos of Latana Cafe — tap any image for a full-screen view."
+  },
+  "blogPage": {
+    "metaTitle": "Blog",
+    "metaDescription": "Articles from Latana Cafe — behind the bar, in the kitchen, and in the neighborhood.",
+    "backToList": "All articles"
+  },
+  "lang": {
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "welcome": "Welcome",
+    "slides": [
+      {
+        "title": "The best coffee tasting experience",
+        "text": "Fresh beans, skilled baristas, and a warm space made for good conversations."
+      },
+      {
+        "title": "Amazing taste and a beautiful place",
+        "text": "Visit Latana Cafe for specialty drinks, calm lighting, and honest hospitality."
+      },
+      {
+        "title": "Creamy, hot, and ready to serve",
+        "text": "From classic espresso to seasonal signatures — crafted with care, every cup."
+      }
+    ],
+    "orderNow": "Order now",
+    "viewMenu": "View menu"
+  },
+  "intro": {
+    "phoneTitle": "Call us",
+    "phoneNumber": "+00 000 000 0000",
+    "phoneText": "We are happy to help with reservations and takeaway.",
+    "addressTitle": "Visit us",
+    "addressShort": "Your street & district",
+    "addressLine": "Your street and city — update in data or messages.",
+    "hoursTitle": "Open Monday–Friday",
+    "hoursText": "8:00am – 9:00pm",
+    "bookTitle": "Book a table",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "date": "Date",
+    "time": "Time",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Appointment",
+    "bookingSuccess": "Thank you — your request was sent. We will contact you shortly.",
+    "bookingError": "Could not send the message. Please try again later or call us.",
+    "bookingConfig": "Booking email is not configured on the server yet.",
+    "bookingValidation": "Please fill in first name, last name, phone, and date.",
+    "bookingSpam": "Request could not be sent.",
+    "bookingSending": "Sending…"
+  },
+  "about": {
+    "sub": "Discover",
+    "title": "Our story",
+    "text": "Latana Cafe started with a simple idea: serve excellent coffee in a space that feels like home. We source thoughtfully, roast with precision, and train our team to welcome every guest like a neighbor. Whether you need a quiet corner or a lively catch-up with friends, we are here — consistent, friendly, and proud of what is in the cup."
+  },
+  "menuSection": {
+    "sub": "Discover",
+    "title": "Our Menu",
+    "text": "Explore specialty espresso, filter coffee, cold drinks, and small plates — all listed in our PDF menu and updated seasonally.",
+    "cta": "View Full Menu",
+    "gridAria": "Menu highlights"
+  },
+  "counters": {
+    "sub": "Numbers",
+    "title": "Latana in brief",
+    "lead": "We grow with our neighborhood — quality first, community always.",
+    "branches": "Locations",
+    "awards": "Local features",
+    "customers": "Happy guests",
+    "team": "Team members"
+  },
+  "bestSellers": {
+    "sub": "Discover",
+    "title": "Best coffee sellers",
+    "lead": "Guest favorites — balanced, comforting, and made to order.",
+    "addToCart": "Add to cart",
+    "items": {
+      "one": {
+        "name": "House cappuccino",
+        "desc": "Double espresso, silky milk foam, light cocoa dust."
+      },
+      "two": {
+        "name": "Latana latte",
+        "desc": "Smooth espresso with steamed milk and gentle sweetness."
+      },
+      "three": {
+        "name": "Cold brew tonic",
+        "desc": "Slow-steeped coffee with tonic and citrus peel."
+      },
+      "four": {
+        "name": "Mocha classic",
+        "desc": "Rich chocolate notes with a double shot backbone."
+      }
+    }
+  },
+  "gallery": {
+    "open": "Open gallery",
+    "search": "View image",
+    "viewFull": "View image {current} of {total}",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image",
+    "dialogTitle": "Gallery image",
+    "counter": "{current} / {total}"
+  },
+  "products": {
+    "sub": "Discover",
+    "title": "Our products",
+    "lead": "A quick look across food, drinks, and desserts — swap copy anytime in messages.",
+    "addToCart": "Add to cart",
+    "tabs": {
+      "main": "Main dish",
+      "drinks": "Drinks",
+      "desserts": "Desserts"
+    },
+    "main": {
+      "one": {
+        "name": "Grilled sandwich",
+        "desc": "Toasted bread, seasonal greens, and a savory house sauce."
+      },
+      "two": {
+        "name": "Breakfast plate",
+        "desc": "Eggs, fresh bread, and a light salad — perfect with coffee."
+      },
+      "three": {
+        "name": "Savory bowl",
+        "desc": "Warm grains, roasted vegetables, and herbs."
+      }
+    },
+    "drinks": {
+      "one": {
+        "name": "Citrus refresher",
+        "desc": "Chilled, bright, and lightly sparkling."
+      },
+      "two": {
+        "name": "Iced tea",
+        "desc": "Brewed tea served over ice with a hint of fruit."
+      },
+      "three": {
+        "name": "House soda",
+        "desc": "Small-batch syrup and sparkling water."
+      }
+    },
+    "desserts": {
+      "one": {
+        "name": "Honey cake slice",
+        "desc": "Moist layers with caramelized honey and cream."
+      },
+      "two": {
+        "name": "Chocolate brownie",
+        "desc": "Dense, rich, and baked fresh in small batches."
+      },
+      "three": {
+        "name": "Seasonal tart",
+        "desc": "Buttery crust with fruit from local markets."
+      }
+    }
+  },
+  "testimonials": {
+    "sub": "Testimony",
+    "title": "Customers say",
+    "lead": "We are grateful for every review — here is a sample of recent feedback.",
+    "items": {
+      "one": {
+        "quote": "Consistently great espresso and a calm atmosphere. Latana is my weekday stop.",
+        "name": "Sara M.",
+        "role": "Regular guest"
+      },
+      "two": {
+        "quote": "The team remembers my order and the pastries are always fresh. Highly recommend.",
+        "name": "James K.",
+        "role": "Freelance designer"
+      },
+      "three": {
+        "quote": "Beautiful space, fair prices, and coffee that tastes carefully made — not rushed.",
+        "name": "Amira L.",
+        "role": "Student"
+      },
+      "four": {
+        "quote": "We booked a table for six; service was smooth and the drinks arrived fast.",
+        "name": "Daniel R.",
+        "role": "Event organizer"
+      },
+      "five": {
+        "quote": "The cold brew is outstanding. I bring friends here every weekend.",
+        "name": "Elena V.",
+        "role": "Photographer"
+      }
+    }
+  },
+  "blog": {
+    "title": "Recent from the journal",
+    "lead": "Stories about beans, recipes, and cafe life — static for now, easy to extend later.",
+    "admin": "Latana team",
+    "chat": "comments",
+    "readMore": "Read article",
+    "feed": {
+      "handle": "Latana Cafe",
+      "meta": "Berlin · Specialty coffee",
+      "galleryAria": "Swipe or use arrows to browse photos"
+    },
+    "posts": {
+      "one": {
+        "date": "Mar 2, 2026",
+        "title": "How we dial our espresso",
+        "excerpt": "A short look at grind, yield, and taste balance behind the bar.",
+        "body": [
+          "Dialing espresso is less about chasing numbers on a screen and more about building a repeatable ritual. Each morning we taste, adjust, and log small changes so the next shift inherits a clear baseline.",
+          "We start with a target ratio and time window, then let flavor lead. If a shot tastes thin or sharp, we adjust grind in micro-steps before we touch yield. That order keeps the cup profile stable for guests who visit weekly — and for newcomers ordering their first flat white.",
+          "Temperature and water matter too. Our machine is cleaned on a strict cadence, and we flush between long idle gaps so the first shot of the afternoon matches the first shot of the morning.",
+          "If you ever want to peek behind the bar, ask a barista to walk you through a dial-in. We love translating this craft into plain language — no gatekeeping, just good coffee."
+        ]
+      },
+      "two": {
+        "date": "Feb 18, 2026",
+        "title": "Seasonal syrup, made in-house",
+        "excerpt": "Why small batches matter for flavor and consistency.",
+        "body": [
+          "House syrups begin with ingredients we would happily serve on a plate: citrus zest, real vanilla, herbs from trusted growers, and sugar cooked to a clean caramel without burning the edges.",
+          "Small batches let us correct quickly. If a batch tastes too bright or too flat, we adjust the next kettle instead of living with a giant tank of “almost right” for a month.",
+          "Seasonality keeps the menu alive. When blood oranges peak, you might see them in a spritz special; when they fade, we retire the recipe until next year rather than faking the flavor with concentrates.",
+          "The goal is simple: a sweetener that reads like part of the drink — not a sugar bomb sitting on top of it."
+        ]
+      },
+      "three": {
+        "date": "Jan 30, 2026",
+        "title": "Welcoming mornings at Latana",
+        "excerpt": "What we do to make early hours feel easy for guests.",
+        "body": [
+          "Early shifts set the emotional temperature of the cafe. Lights are softened, music stays low, and the first playlist is chosen for calm focus — not weekend hype.",
+          "We keep the queue legible: clear signage, a warm greeting, and a barista who can explain the menu in two sentences if someone is still waking up.",
+          "Pastries are staged so the case looks full at opening, and we refresh crumbs and spills before they become part of the scenery. Small details signal respect for people who trusted us with their first stop of the day.",
+          "Whether you are grabbing a takeaway in sixty seconds or settling in with a journal for an hour, we want the space to feel like a exhale — friendly, predictable, and genuinely glad you came."
+        ]
+      }
+    }
+  },
+  "appointment": {
+    "title": "Book a table",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "date": "Date",
+    "time": "Time",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Appointment",
+    "mapAlt": "Cafe location preview"
+  },
+  "footer": {
+    "aboutTitle": "About us",
+    "aboutText": "Latana Cafe — specialty coffee, simple food, and a neighborhood-focused team.",
+    "blogTitle": "Recent blog",
+    "servicesTitle": "Services",
+    "services": {
+      "cooked": "Kitchen favorites",
+      "deliver": "Takeaway",
+      "quality": "Quality ingredients",
+      "mixed": "Seasonal specials"
+    },
+    "questionsTitle": "Questions?",
+    "address": "Rahel-Hirsch-Straße 10, 10557 Berlin",
+    "phone": "+49 160 8504523",
+    "email": "Bright.future.da.gmbh@gmail.com",
+    "facebookUrl": "https://www.facebook.com/share/1CrLm7fSNp/?mibextid=wwXIfr",
+    "facebookLabel": "Latana Cafe Berlin on Facebook",
+    "rights": "All rights reserved.",
+    "credit": "Designed for Latana Cafe."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "easy-order",
+      "icon": "choices",
+      "en": {
+        "title": "Easy to Order",
+        "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      },
+      "ar": {
+        "title": "سهولة الطلب",
+        "text": "حتى التوجيه الأقوى لا يملك سيطرة على النصوص العمياء؛ الأمر يكاد يخرج عن قواعد الإملاء التقليدية."
+      },
+      "de": {
+        "title": "Einfach bestellen",
+        "text": "Selbst das allmächtige Zeigen hat keine Kontrolle über die blinden Texte — es ist beinahe unorthografisch."
+      }
+    },
+    {
+      "id": "welcoming-space",
+      "icon": "atmosphere",
+      "en": {
+        "title": "Welcoming Space",
+        "text": "Calm lighting, comfortable seating, and unhurried service — stay for a quick espresso or a long catch-up with friends at Latana."
+      },
+      "ar": {
+        "title": "مساحة دافئة",
+        "text": "إضاءة هادئة، جلوس مريح، وخدمة بلا عجلة — لمزاج سريع أو جلسة طويلة مع الأصدقاء في لاتانا."
+      },
+      "de": {
+        "title": "Einladender Raum",
+        "text": "Sanftes Licht, bequeme Sitze und entspannte Bedienung — ob schneller Espresso oder langes Beisammensein mit Freunden bei Latana."
+      }
+    },
+    {
+      "id": "quality-coffee",
+      "icon": "coffee-bean",
+      "en": {
+        "title": "Quality Coffee",
+        "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      },
+      "ar": {
+        "title": "قهوة بجودة",
+        "text": "حتى التوجيه الأقوى لا يملك سيطرة على النصوص العمياء؛ الأمر يكاد يخرج عن قواعد الإملاء التقليدية."
+      },
+      "de": {
+        "title": "Qualitätskaffee",
+        "text": "Selbst das allmächtige Zeigen hat keine Kontrolle über die blinden Texte — es ist beinahe unorthografisch."
+      }
+    }
+  ]
+}

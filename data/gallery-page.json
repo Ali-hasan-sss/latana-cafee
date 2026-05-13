@@ -1,0 +1,20 @@
+{
+  "heroBackground": "/images/DSC03200.JPG.jpeg",
+  "hero": {
+    "title": {
+      "en": "Gallery",
+      "ar": "المعرض",
+      "de": "Galerie"
+    },
+    "breadcrumbHome": {
+      "en": "Home",
+      "ar": "الرئيسية",
+      "de": "Start"
+    },
+    "breadcrumbCurrent": {
+      "en": "Gallery",
+      "ar": "المعرض",
+      "de": "Galerie"
+    }
+  }
+}

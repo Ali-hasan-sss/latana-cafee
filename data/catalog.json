@@ -1,0 +1,55 @@
+{
+  "counters": [
+    { "value": 3, "suffix": "", "labelKey": "branches" },
+    { "value": 12, "suffix": "+", "labelKey": "awards" },
+    { "value": 2500, "suffix": "+", "labelKey": "customers" },
+    { "value": 8, "suffix": "", "labelKey": "team" }
+  ],
+  "bestSellers": [
+    { "price": "5.90", "itemKey": "one" },
+    { "price": "6.20", "itemKey": "two" },
+    { "price": "4.80", "itemKey": "three" },
+    { "price": "5.50", "itemKey": "four" }
+  ],
+  "productTabs": [
+    {
+      "id": "main",
+      "labelKey": "main",
+      "items": [
+        { "price": "8.90", "itemKey": "one" },
+        { "price": "9.50", "itemKey": "two" },
+        { "price": "7.90", "itemKey": "three" }
+      ]
+    },
+    {
+      "id": "drinks",
+      "labelKey": "drinks",
+      "items": [
+        { "price": "3.90", "itemKey": "one" },
+        { "price": "4.20", "itemKey": "two" },
+        { "price": "3.50", "itemKey": "three" }
+      ]
+    },
+    {
+      "id": "desserts",
+      "labelKey": "desserts",
+      "items": [
+        { "price": "4.90", "itemKey": "one" },
+        { "price": "5.10", "itemKey": "two" },
+        { "price": "4.50", "itemKey": "three" }
+      ]
+    }
+  ],
+  "testimonials": [
+    { "itemKey": "one", "avatarIndex": 0 },
+    { "itemKey": "two", "avatarIndex": 1, "overlay": true },
+    { "itemKey": "three", "avatarIndex": 2 },
+    { "itemKey": "four", "avatarIndex": 3, "overlay": true },
+    { "itemKey": "five", "avatarIndex": 4 }
+  ],
+  "blog": [
+    { "postKey": "one", "comments": 3 },
+    { "postKey": "two", "comments": 5 },
+    { "postKey": "three", "comments": 2 }
+  ]
+}

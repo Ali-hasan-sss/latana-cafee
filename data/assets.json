@@ -1,0 +1,68 @@
+{
+  "menuPdf": "/Menü.pdf",
+  "heroSlides": [
+    "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg",
+    "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+    "/images/96a8093f-8d58-475a-8a60-8b46e2d6da79.jpg.jpeg"
+  ],
+  "aboutImage": "/images/IMG_8370.JPG.jpeg",
+  "menuPreview": [
+    "/images/IMG-20251130-WA0006.jpg.jpeg",
+    "/images/IMG-20251130-WA0007.jpg.jpeg",
+    "/images/IMG_8417.JPG.jpeg",
+    "/images/IMG_8418.JPG.jpeg"
+  ],
+  "bestSellers": [
+    "/images/IMG_8506.JPG.jpeg",
+    "/images/IMG_8820.JPG.jpeg",
+    "/images/IMG_9411.JPG.jpeg",
+    "/images/IMG_9425.JPG.jpeg"
+  ],
+  "gallery": [
+    "/images/DSC02919.JPG.jpeg",
+    "/images/DSC02992.JPG.jpeg",
+    "/images/DSC03006.JPG.jpeg",
+    "/images/DSC03200.JPG.jpeg"
+  ],
+  "counterBg": "/images/DSC04750.JPG.jpeg",
+  "testimonyBg": "/images/DSC04823.JPG.jpeg",
+  "blog": [
+    "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg",
+    "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+    "/images/96a8093f-8d58-475a-8a60-8b46e2d6da79.jpg.jpeg"
+  ],
+  "footerBlogThumb": [
+    "/images/IMG-20251130-WA0006.jpg.jpeg",
+    "/images/IMG-20251130-WA0007.jpg.jpeg"
+  ],
+  "appointmentMapPlaceholder": "/images/DSC02919.JPG.jpeg",
+  "cafeGoogleMapsEmbedSrc": "",
+  "cafeMapLat": 52.5219,
+  "cafeMapLng": 13.4132,
+  "products": {
+    "main": [
+      "/images/IMG_8417.JPG.jpeg",
+      "/images/IMG_8418.JPG.jpeg",
+      "/images/IMG_8506.JPG.jpeg"
+    ],
+    "drinks": [
+      "/images/IMG_8820.JPG.jpeg",
+      "/images/IMG_9411.JPG.jpeg",
+      "/images/IMG_9425.JPG.jpeg"
+    ],
+    "desserts": [
+      "/images/IMG-20251130-WA0006.jpg.jpeg",
+      "/images/IMG-20251130-WA0007.jpg.jpeg",
+      "/images/IMG_8370.JPG.jpeg"
+    ]
+  },
+  "testimonials": {
+    "avatars": [
+      "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg",
+      "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+      "/images/96a8093f-8d58-475a-8a60-8b46e2d6da79.jpg.jpeg",
+      "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+      "/images/96a8093f-8d58-475a-8a60-8b46e2d6da79.jpg.jpeg"
+    ]
+  }
+}

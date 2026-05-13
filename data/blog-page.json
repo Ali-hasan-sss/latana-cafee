@@ -1,0 +1,20 @@
+{
+  "heroBackground": "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+  "hero": {
+    "title": {
+      "en": "Our Journal",
+      "ar": "مدونتنا",
+      "de": "Unser Journal"
+    },
+    "breadcrumbHome": {
+      "en": "Home",
+      "ar": "الرئيسية",
+      "de": "Start"
+    },
+    "breadcrumbCurrent": {
+      "en": "Blog",
+      "ar": "المدونة",
+      "de": "Blog"
+    }
+  }
+}

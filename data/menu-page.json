@@ -1,0 +1,592 @@
+{
+  "heroBackground": "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg",
+  "hero": {
+    "title": {
+      "en": "Our Menu",
+      "ar": "قائمتنا",
+      "de": "Unsere Speisekarte"
+    },
+    "breadcrumbHome": {
+      "en": "Home",
+      "ar": "الرئيسية",
+      "de": "Start"
+    },
+    "breadcrumbCurrent": {
+      "en": "Menu",
+      "ar": "القائمة",
+      "de": "Menü"
+    }
+  },
+  "productsIntro": {
+    "subheading": {
+      "en": "Discover",
+      "ar": "اكتشف",
+      "de": "Entdecken"
+    },
+    "title": {
+      "en": "Our Products",
+      "ar": "منتجاتنا",
+      "de": "Unsere Produkte"
+    },
+    "lead": {
+      "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا، تعيش النصوص العمياء.",
+      "de": "Weit weit weg, hinter den Wortbergen, fern der Länder Vokalia und Consonantia, leben die blinden Texte."
+    }
+  },
+  "addToCart": {
+    "en": "Add to cart",
+    "ar": "أضف إلى السلة",
+    "de": "In den Warenkorb"
+  },
+  "pricingColumns": [
+    {
+      "id": "starter",
+      "title": {
+        "en": "Starter",
+        "ar": "مقبلات",
+        "de": "Vorspeisen"
+      },
+      "items": [
+        {
+          "image": "/images/IMG_8417.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Cornish - Mackerel",
+            "ar": "ماكريل كورنيش",
+            "de": "Kornische Makrele"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/IMG_8418.JPG.jpeg",
+          "price": "29.00",
+          "name": {
+            "en": "Roasted Steak",
+            "ar": "ستيك مشوي",
+            "de": "Gebratenes Steak"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/IMG_8506.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Seasonal Soup",
+            "ar": "شوربة موسمية",
+            "de": "Saisonale Suppe"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/IMG_8820.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Chicken Curry",
+            "ar": "كاري دجاج",
+            "de": "Hähnchen-Curry"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mainDish",
+      "title": {
+        "en": "Main Dish",
+        "ar": "طبق رئيسي",
+        "de": "Hauptgericht"
+      },
+      "items": [
+        {
+          "image": "/images/IMG_9411.JPG.jpeg",
+          "price": "49.91",
+          "name": {
+            "en": "Sea Trout",
+            "ar": "سلمون بحري",
+            "de": "Meerforelle"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/IMG_9425.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Roasted Beef",
+            "ar": "لحم بقري مشوي",
+            "de": "Gebratenes Rindfleisch"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/IMG-20251130-WA0006.jpg.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Butter Fried Chicken",
+            "ar": "دجاج مقلي بالزبدة",
+            "de": "Buttergebratenes Hähnchen"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/IMG-20251130-WA0007.jpg.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Chicken Fillet",
+            "ar": "فيليه دجاج",
+            "de": "Hähnchenfilet"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": {
+        "en": "Desserts",
+        "ar": "حلويات",
+        "de": "Desserts"
+      },
+      "items": [
+        {
+          "image": "/images/IMG_8370.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Honey Cake",
+            "ar": "كيكة عسل",
+            "de": "Honigkuchen"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/DSC02919.JPG.jpeg",
+          "price": "29.00",
+          "name": {
+            "en": "Chocolate Brownie",
+            "ar": "براوني شوكولاتة",
+            "de": "Schokoladen-Brownie"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/DSC02992.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Seasonal Tart",
+            "ar": "تارت موسمي",
+            "de": "Saisonale Tarte"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/DSC03006.JPG.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Vanilla Panna Cotta",
+            "ar": "بانا كوتا فانيليا",
+            "de": "Vanille-Panna-Cotta"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": {
+        "en": "Drinks",
+        "ar": "مشروبات",
+        "de": "Getränke"
+      },
+      "items": [
+        {
+          "image": "/images/DSC03200.JPG.jpeg",
+          "price": "49.91",
+          "name": {
+            "en": "Iced Latte",
+            "ar": "لاتيه مثلج",
+            "de": "Eislatte"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/96a8093f-8d58-475a-8a60-8b46e2d6da79.jpg.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "House Cold Brew",
+            "ar": "كولد برو منزلي",
+            "de": "Haus-Cold-Brew"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/8a07097e-6685-4235-adef-d75450146d05.jpg.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Citrus Refresher",
+            "ar": "منعش حمضيات",
+            "de": "Zitrus-Erfrischer"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        },
+        {
+          "image": "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg",
+          "price": "20.00",
+          "name": {
+            "en": "Sparkling Tonic",
+            "ar": "تونيك فوار",
+            "de": "Sprudel-Tonic"
+          },
+          "desc": {
+            "en": "A small river named Duden flows by their place and supplies.",
+            "ar": "نهر صغير يُدعى دودن يمر بجانبهم ويزودهم.",
+            "de": "Ein kleiner Fluss namens Duden fließt an ihrem Ort vorbei."
+          }
+        }
+      ]
+    }
+  ],
+  "productTabs": [
+    {
+      "id": "main",
+      "label": {
+        "en": "Main Dish",
+        "ar": "طبق رئيسي",
+        "de": "Hauptgericht"
+      },
+      "items": [
+        {
+          "image": "/images/IMG_8417.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Grilled Beef",
+            "ar": "لحم مشوي",
+            "de": "Gegrilltes Rindfleisch"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_8418.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Grilled Beef",
+            "ar": "لحم مشوي",
+            "de": "Gegrilltes Rindfleisch"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_8506.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Grilled Beef",
+            "ar": "لحم مشوي",
+            "de": "Gegrilltes Rindfleisch"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_8820.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Grilled Beef",
+            "ar": "لحم مشوي",
+            "de": "Gegrilltes Rindfleisch"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_9411.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Grilled Beef",
+            "ar": "لحم مشوي",
+            "de": "Gegrilltes Rindfleisch"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_9425.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Grilled Beef",
+            "ar": "لحم مشوي",
+            "de": "Gegrilltes Rindfleisch"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "label": {
+        "en": "Drinks",
+        "ar": "مشروبات",
+        "de": "Getränke"
+      },
+      "items": [
+        {
+          "image": "/images/IMG_8820.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Lemonade Juice",
+            "ar": "عصير ليمون",
+            "de": "Limonadensaft"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_9411.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Pineapple Juice",
+            "ar": "عصير أناناس",
+            "de": "Ananassaft"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_9425.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Soda Drinks",
+            "ar": "مشروبات غازية",
+            "de": "Limonaden"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG-20251130-WA0006.jpg.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Lemonade Juice",
+            "ar": "عصير ليمون",
+            "de": "Limonadensaft"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG-20251130-WA0007.jpg.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Pineapple Juice",
+            "ar": "عصير أناناس",
+            "de": "Ananassaft"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_8370.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Soda Drinks",
+            "ar": "مشروبات غازية",
+            "de": "Limonaden"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "label": {
+        "en": "Desserts",
+        "ar": "حلويات",
+        "de": "Desserts"
+      },
+      "items": [
+        {
+          "image": "/images/DSC02919.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Hot Cake Honey",
+            "ar": "كيكة عسل ساخنة",
+            "de": "Warmer Honigkuchen"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/DSC02992.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Hot Cake Honey",
+            "ar": "كيكة عسل ساخنة",
+            "de": "Warmer Honigkuchen"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/DSC03006.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Hot Cake Honey",
+            "ar": "كيكة عسل ساخنة",
+            "de": "Warmer Honigkuchen"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/DSC03200.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Hot Cake Honey",
+            "ar": "كيكة عسل ساخنة",
+            "de": "Warmer Honigkuchen"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_8417.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Hot Cake Honey",
+            "ar": "كيكة عسل ساخنة",
+            "de": "Warmer Honigkuchen"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        },
+        {
+          "image": "/images/IMG_8418.JPG.jpeg",
+          "price": "2.90",
+          "name": {
+            "en": "Hot Cake Honey",
+            "ar": "كيكة عسل ساخنة",
+            "de": "Warmer Honigkuchen"
+          },
+          "desc": {
+            "en": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+            "ar": "خلف جبال الكلمات البعيدة، بعيدًا عن بلاد فوكاليا وكونسونانتيا.",
+            "de": "Weit weg hinter den Wortbergen, fern von Vokalia und Consonantia."
+          }
+        }
+      ]
+    }
+  ]
+}
