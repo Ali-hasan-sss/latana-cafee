@@ -4,6 +4,16 @@ import { useActionState, useEffect, useRef } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { submitBooking, type BookingFormState } from "@/app/actions/booking";
 
+function openNativeDateTimePicker(el: HTMLInputElement) {
+  if (typeof el.showPicker === "function") {
+    try {
+      el.showPicker();
+    } catch {
+      /* not allowed or unsupported */
+    }
+  }
+}
+
 function todayISOLocal(): string {
   const d = new Date();
   const y = d.getFullYear();
@@ -54,7 +64,7 @@ const control =
   "form-control block w-full border-0 bg-white px-5 py-[14px] text-[15px] leading-normal text-[#212529] placeholder-[#6c757d] focus:outline-none focus:ring-2 focus:ring-white/90";
 
 /** Native date/time: scheme + room for calendar/clock affordance */
-const dateTimeControl = `${control} intro-booking-dt min-h-[52px] [color-scheme:light]`;
+const dateTimeControl = `${control} intro-booking-dt min-h-[52px] cursor-pointer [color-scheme:light]`;
 
 const wrapIntro =
   "book bg-brand-primary p-4 text-[#212529] md:w-[420px] md:max-w-[100%] md:flex-shrink-0 xl:w-[450px] ftco-animate";
@@ -163,6 +173,7 @@ export function IntroBookingForm({ variant = "intro" }: Props) {
                 aria-label={t("date")}
                 className={`${dateTimeControl} appointment_date ps-12`}
                 disabled={pending}
+                onClick={(e) => openNativeDateTimePicker(e.currentTarget)}
               />
             </div>
           </div>
@@ -178,6 +189,7 @@ export function IntroBookingForm({ variant = "intro" }: Props) {
                 aria-label={t("time")}
                 className={`${dateTimeControl} appointment_time ps-12`}
                 disabled={pending}
+                onClick={(e) => openNativeDateTimePicker(e.currentTarget)}
               />
             </div>
           </div>

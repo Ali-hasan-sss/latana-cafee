@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
@@ -12,6 +12,10 @@ const mainLinks = [
   { href: "/gallery", key: "gallery" as const },
   { href: "/blog", key: "blog" as const },
 ];
+
+/** Latin logo in the navbar for every locale */
+const BRAND_NAME_EN = "Latana";
+const BRAND_TAG_EN = "Cafe";
 
 function CartIcon({ className }: { className?: string }) {
   return (
@@ -35,8 +39,6 @@ function CartIcon({ className }: { className?: string }) {
 
 export function Navbar() {
   const t = useTranslations("nav");
-  const tBrand = useTranslations("brand");
-  const locale = useLocale();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -60,17 +62,11 @@ export function Navbar() {
 
   const brandBlock = (
     <>
-      {locale === "ar" ? (
-        <span className="text-[1.35rem] font-bold tracking-tight text-white">
-          {tBrand("name")}
-        </span>
-      ) : (
-        <span className="font-accent text-[1.75rem] font-normal leading-none text-white md:text-[2rem]">
-          {tBrand("name")}
-        </span>
-      )}
+      <span className="font-accent text-[1.75rem] font-normal leading-none text-white md:text-[2rem]">
+        {BRAND_NAME_EN}
+      </span>
       <small className="ms-0.5 text-[0.95rem] font-semibold uppercase tracking-[0.12em] text-brand-primary md:text-[1.05rem]">
-        {tBrand("tag")}
+        {BRAND_TAG_EN}
       </small>
     </>
   );
@@ -78,7 +74,9 @@ export function Navbar() {
   return (
     <nav
       id="ftco-navbar"
-      className={`navbar ftco_navbar fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 ease-out ${
+      dir="ltr"
+      lang="en"
+      className={`navbar ftco_navbar fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 ease-out [direction:ltr] ${
         scrolled
           ? "border-white/10 bg-[#0a0a0a] shadow-[0_4px_24px_rgba(0,0,0,0.45)]"
           : "border-white/5 bg-[#0a0a0a]/88 backdrop-blur-[2px]"

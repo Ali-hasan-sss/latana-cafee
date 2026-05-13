@@ -93,19 +93,14 @@ body {
   outline: none;
 }
 
+/* Hide browser date/time affordances; custom SVG icons sit in .input-wrap .icon */
 .intro-booking input.intro-booking-dt[type="date"]::-webkit-calendar-picker-indicator,
 .intro-booking input.intro-booking-dt[type="time"]::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  opacity: 1;
-  margin-inline-start: 0.25rem;
-  padding: 0.35rem;
-  border-radius: 2px;
-  filter: sepia(0.35) saturate(1.8) hue-rotate(5deg) brightness(0.92);
+  display: none;
 }
 
-.intro-booking input.intro-booking-dt[type="date"]::-webkit-calendar-picker-indicator:hover,
-.intro-booking input.intro-booking-dt[type="time"]::-webkit-calendar-picker-indicator:hover {
-  background-color: rgba(196, 155, 99, 0.25);
+.intro-booking input.intro-booking-dt[type="date"]::-moz-calendar-picker-indicator {
+  display: none;
 }
 
 /* Firefox: accent + readable fields */
