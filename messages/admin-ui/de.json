@@ -1,0 +1,393 @@
+{
+  "shell": {
+    "brand": "Latana Cafe",
+    "badge": "Admin",
+    "viewSite": "Website ansehen",
+    "signOut": "Abmelden",
+    "content": "Inhalte",
+    "language": "Sprache",
+    "openNav": "Menü öffnen",
+    "closeNav": "Menü schließen"
+  },
+  "cmsLocales": {
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "overview": "Überblick",
+    "homePage": "Startseite",
+    "heroSlider": "Hero-Slider",
+    "aboutSection": "Über-uns-Bereich",
+    "servicesSection": "Leistungen-Bereich",
+    "menuPreview": "Menü-Vorschau (Startseite)",
+    "menuPage": "Menü-Seite (/menu)",
+    "counter": "Zahlen (Counter)",
+    "bestSellers": "Bestseller (Startseite)",
+    "products": "Entdecken / Produkte (Startseite)",
+    "blog": "Blog-Artikel",
+    "gallery": "Galerie",
+    "contact": "Kontakt"
+  },
+  "meta": {
+    "overview": "Überblick · Admin",
+    "heroSlider": "Hero-Slider · Admin",
+    "aboutSection": "Über-uns-Bereich · Admin",
+    "servicesSection": "Leistungen-Bereich · Admin",
+    "menuPreview": "Menü-Vorschau · Admin",
+    "menuPage": "Menü-Seite · Admin",
+    "counter": "Zahlen (Counter) · Admin",
+    "bestSellers": "Bestseller · Admin",
+    "products": "Entdecken / Produkte · Admin",
+    "blog": "Blog-Artikel · Admin",
+    "gallery": "Galerie · Admin",
+    "contact": "Kontakt · Admin",
+    "login": "Admin-Anmeldung · Latana Cafe"
+  },
+  "overview": {
+    "title": "Überblick",
+    "lead": "Wählen Sie einen Bereich in der Seitenleiste, um Website-Inhalte zu bearbeiten.",
+    "cards": {
+      "heroSlider": {
+        "title": "Hero-Slider",
+        "desc": "Hero-Bilder sowie Überschrift und Text auf Englisch, Arabisch und Deutsch."
+      },
+      "aboutSection": {
+        "title": "Über-uns-Bereich",
+        "desc": "Entdecken / Unsere Geschichte — Bild und Text in EN, AR und DE."
+      },
+      "servicesSection": {
+        "title": "Leistungen-Bereich",
+        "desc": "Leistungen-Block auf der Startseite — Überschrift und drei Karten in EN, AR und DE."
+      },
+      "menuPreview": {
+        "title": "Menü-Vorschau (Startseite)",
+        "desc": "Unser Menü — vier Bilder und Texte in EN, AR und DE."
+      },
+      "menuPage": {
+        "title": "Menü-Seite (/menu)",
+        "desc": "Kategorien, Gerichte, Hero und Breadcrumb — gleiches Layout wie die öffentliche Menü-Seite."
+      },
+      "counter": {
+        "title": "Zahlen (Counter)",
+        "desc": "Statistik-Block — Hintergrund, Überschrift und vier Zähler in EN, AR und DE."
+      },
+      "bestSellers": {
+        "title": "Bestseller (Startseite)",
+        "desc": "Vier Highlights — Bilder, Preise und Texte in EN, AR und DE."
+      },
+      "products": {
+        "title": "Entdecken / Unsere Produkte (Startseite)",
+        "desc": "Produkt-Tabs (max. 4), drei Artikel pro Tab, Überschriften und Texte in EN, AR und DE."
+      },
+      "blog": {
+        "title": "Blog-Artikel",
+        "desc": "Beiträge in EN, AR und DE anlegen, bearbeiten und löschen — Rich-Text mit Emoji-Leiste."
+      },
+      "gallery": {
+        "title": "Galerie",
+        "desc": "Galerie-Pool, Uploads und die vier Teaser-Bilder für die Startseite."
+      },
+      "contact": {
+        "title": "Kontakt & Standort",
+        "desc": "Telefon, WhatsApp, Adresse, Öffnungszeiten, Karte, E-Mail und Social Links für die Website."
+      }
+    }
+  },
+  "login": {
+    "metaTitle": "Admin-Anmeldung · Latana Cafe",
+    "title": "Admin-Anmeldung",
+    "subtitle": "Latana Cafe — Content-Verwaltung",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "signIn": "Anmelden",
+    "signingIn": "Wird angemeldet…",
+    "placeholderUsername": "admin",
+    "errors": {
+      "required": "Benutzername und Passwort sind erforderlich.",
+      "invalid": "Benutzername oder Passwort ungültig.",
+      "config": "AUTH_SECRET fehlt oder ist zu kurz (mind. 16 Zeichen). Bitte Server-Konfiguration prüfen."
+    }
+  },
+  "shared": {
+    "copyByLanguage": "Text je Sprache",
+    "sectionHeading": "Abschnittsüberschrift",
+    "subheading": "Unterüberschrift",
+    "title": "Titel",
+    "lead": "Lead",
+    "text": "Text",
+    "bodyText": "Fließtext",
+    "enTitle": "EN-Titel",
+    "cardsCount": "Karten",
+    "image": "Bild",
+    "snapshotImage": "Bild",
+    "editInModal": "Im Dialog bearbeiten",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "serviceCards": "Service-Karten",
+    "cardN": "Karte {n}",
+    "statistics": "Statistiken",
+    "statN": "Statistik {n}",
+    "fourCountersHint": "Vier Zähler (feste Reihenfolge). Wert ist eine Zahl; Suffix ist optionaler Text nach der Zahl (z. B. +).",
+    "value": "Wert",
+    "suffix": "Suffix (z. B. +)",
+    "labelForTab": "Bezeichnung ({tab})",
+    "previewImagesFour": "Vorschaubilder (4)",
+    "uploadReplaceHint": "Beim Ersetzen eines Uploads wird die alte Datei unter /uploads/ beim Speichern entfernt. /images/-Pfade bleiben erhalten.",
+    "imageN": "Bild {n}",
+    "imageHintRequired": "Erforderlich — wird im 2×2-Raster auf der Startseite genutzt.",
+    "primaryCta": "Primärer Button-Text",
+    "gridAriaLabel": "Aria-Label für Bildraster",
+    "articleCopy": "Artikeltext",
+    "productCopy": "Produkttext",
+    "addressHoursByLang": "Adresse & Öffnungszeiten je Sprache",
+    "address": "Adresse",
+    "openingHours": "Öffnungszeiten",
+    "hoursHint": "Nutzen Sie gern Zeilenumbrüche zwischen Wochentag und Wochenende.",
+    "hoursPlaceholder": "Montag bis Freitag von 08:00 bis 18:00 Uhr\nSamstag und Sonntag von 09:00 bis 17:00 Uhr",
+    "headingsEn": "Überschriften (EN)",
+    "headingsLead": "Unterüberschrift, Titel und Lead je Sprache (Englisch, Arabisch, Deutsch).",
+    "langEn": "English",
+    "langAr": "Arabic",
+    "langDe": "German",
+    "firstStat": "Erste Statistik",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "email": "E-Mail",
+    "map": "Karte",
+    "productImageHint": "Leeren, um beim Speichern auf das Standardbild zurückzufallen.",
+    "productFormIntro": "Bild, Preis sowie Name/Beschreibung je Sprache. Beim Ersetzen eines Uploads wird die alte Datei unter /uploads/ entfernt.",
+    "priceDisplay": "Preis (Anzeige, z. B. 5.90)",
+    "name": "Name",
+    "description": "Beschreibung",
+    "dateDisplay": "Datum (Anzeige)",
+    "excerpt": "Kurztext",
+    "body": "Textkörper",
+    "urlSlug": "URL-Slug",
+    "commentCount": "Kommentaranzahl (Anzeige)",
+    "publishedAt": "Veröffentlicht am (Sortierung — neueste zuerst)",
+    "coverImage": "Titelbild",
+    "coverHint": "Erscheint auf Karten und im Artikelkopf.",
+    "inlineGallery": "Bildergalerie im Artikel",
+    "removeFromGallery": "Aus Galerie entfernen",
+    "addGalleryImage": "Bild zur Galerie hinzufügen",
+    "addGalleryHint": "Nach dem Upload wird das Bild an die Galerie angehängt.",
+    "pendingUpload": "Wartet auf Upload",
+    "galleryImageN": "Bild {n}",
+    "replaceSlotHint": "Datei hochladen, um dieses Bild zu ersetzen.",
+    "subheadingDiscover": "Unterüberschrift (z. B. Entdecken)",
+    "titleOurStory": "Titel (z. B. Unsere Geschichte)",
+    "aboutModalTitle": "Über uns — Entdecken / Unsere Geschichte",
+    "uploadSectionImageHint": "Upload ersetzt den Bildpfad. Alte Dateien unter /uploads/ werden beim Ersetzen beim Speichern entfernt.",
+    "whatsappLabel": "WhatsApp (Nummer mit Ländervorwahl)",
+    "whatsappPlaceholder": "+49 …",
+    "latitude": "Breitengrad",
+    "longitude": "Längengrad",
+    "embedUrl": "Google Maps Embed-URL (optional)",
+    "embedPlaceholder": "https://www.google.com/maps/embed?pb=…",
+    "embedHelp": "Nur die „Karte einbetten“-URL aus Google Maps verwenden (Teilen → Karte einbetten). Normale /maps/place-Links sind in iframes blockiert (X-Frame-Options). Leer lassen, um stattdessen Breiten-/Längengrad zu nutzen.",
+    "socialLinks": "Social-Links",
+    "socialPlaceholder": "https://…",
+    "contactModalTitle": "Kontakt & Standort",
+    "snapshotPhone": "Telefon",
+    "snapshotWhatsApp": "WhatsApp",
+    "snapshotEmail": "E-Mail",
+    "snapshotMap": "Karte",
+    "headingsModalProducts": "Entdecken / Unsere Produkte — Überschriften",
+    "headingsModalBestSellers": "Abschnittsüberschriften bearbeiten",
+    "tabLabelsTitle": "Tab-Bezeichnungen · {tabId}",
+    "addProductTab": "Produkt-Tab hinzufügen",
+    "addProductTabHint": "Bis zu 4 Tabs. Die interne ID leitet sich möglichst vom englischen Titel ab; drei Produktplätze werden mit Standardbildern angelegt (jedes Produkt im eigenen Dialog bearbeiten).",
+    "englishTabTitle": "Englischer Tab-Titel",
+    "arabicTabTitle": "Arabischer Tab-Titel",
+    "germanTabTitle": "Deutscher Tab-Titel",
+    "englishTabTitlePh": "z. B. Snacks",
+    "addTab": "Tab hinzufügen",
+    "productItemTitle": "Produkt {n} · {tabId} · {itemKey}",
+    "bestSellerItemTitle": "Produkt {n} bearbeiten · {id}",
+    "deleteTabConfirm": "Diesen Tab und seine drei Produkte löschen? Hochgeladene Bilder unter /uploads/ werden bei Bedarf entfernt."
+  },
+  "common": {
+    "saveFailed": "Speichern fehlgeschlagen.",
+    "saved": "Gespeichert.",
+    "saveFailedShort": "Speichern fehlgeschlagen.",
+    "couldNotReorder": "Neuordnung nicht möglich.",
+    "couldNotAdd": "Hinzufügen nicht möglich.",
+    "deleteFailed": "Löschen fehlgeschlagen.",
+    "invalidServerResponse": "Ungültige Serverantwort.",
+    "networkUploadError": "Netzwerkfehler beim Hochladen.",
+    "uploadFailedStatus": "Upload fehlgeschlagen ({status})",
+    "removeSlideConfirm": "Diese Folie entfernen?",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "up": "Hoch",
+    "down": "Runter",
+    "moveUp": "Nach oben",
+    "moveDown": "Nach unten",
+    "add": "Hinzufügen",
+    "commentsShort": "Kommentare",
+    "dash": "—"
+  },
+  "upload": {
+    "defaultLabel": "Datei",
+    "uploading": "Wird hochgeladen…",
+    "dropPrompt": "Datei hier ablegen oder klicken zum Auswählen",
+    "formats": "JPEG, PNG, WebP, GIF oder PDF. Bilder werden serverseitig komprimiert; gespeicherte Datei max. 10 MB (größere Originale bis Serverlimit möglich).",
+    "outputTooLarge": "Die Datei ist nach der Verarbeitung noch größer als 10 MB. Versuchen Sie ein kleineres oder einfacheres Bild.",
+    "rawTooLarge": "Die Datei ist zum Hochladen zu groß (Server-Sicherheitslimit).",
+    "invalidImage": "Bild konnte nicht gelesen oder komprimiert werden. Andere Datei oder ein anderes Format versuchen."
+  },
+  "modal": {
+    "closeAria": "Schließen"
+  },
+  "messages": {
+    "saved": "Gespeichert."
+  },
+  "richEditor": {
+    "bulletList": "• Liste",
+    "orderedList": "1. Liste",
+    "link": "Link",
+    "undo": "Rückgängig",
+    "redo": "Wiederholen",
+    "emoji": "Emoji",
+    "insertEmoji": "{emoji} einfügen",
+    "linkPrompt": "URL",
+    "linkDefault": "https://",
+    "defaultPlaceholder": "Artikeltext…"
+  },
+  "panels": {
+    "heroSlider": {
+      "title": "Hero-Slider",
+      "lead": "Hintergrundbild plus Überschrift und Fließtext je Sprache. Änderungen gelten nach dem Speichern auf der Startseite.",
+      "addSlide": "Folie hinzufügen",
+      "tablePreview": "Vorschau",
+      "tableImage": "Bild",
+      "tableEnTitle": "EN-Titel",
+      "tableActions": "Aktionen",
+      "emptyTable": "Noch keine Folien. Fügen Sie eine hinzu, oder es gelten gebündelte Standardwerte bis zum Speichern.",
+      "modalAddTitle": "Hero-Folie hinzufügen",
+      "modalEditTitle": "Hero-Folie bearbeiten",
+      "saveSlide": "Folie speichern",
+      "heroImage": "Hero-Bild",
+      "heroImageHint": "Bilder liegen unter public/uploads. Ersetzen durch erneuten Upload.",
+      "titleLabel": "Titel",
+      "textLabel": "Text"
+    },
+    "blog": {
+      "title": "Blog-Artikel",
+      "lead": "Artikel als Karten. Bearbeitung im Dialog — Galeriebilder sind Uploads, keine manuellen URLs.",
+      "addPost": "Artikel hinzufügen",
+      "deleteConfirm": "Artikel \"{title}\" löschen? Das kann nicht rückgängig gemacht werden.",
+      "commentsLabel": "Kommentare",
+      "editModalTitle": "Artikel bearbeiten · {slug}",
+      "introRich": "Titel, Datum, Kurztext und Rich-Text je Sprache. Titelbild und Galerie nur per Upload (keine manuellen URLs). Alte /uploads/-Dateien werden beim Ersetzen beim Speichern entfernt.",
+      "inlineGalleryTitle": "Bildergalerie im Artikel",
+      "articleCopyHeading": "Artikeltext"
+    },
+    "menuPage": {
+      "title": "Menü-Seite",
+      "lead": "Hero, Breadcrumb, Kategorien und Gerichte bearbeiten. Die Vorschau nutzt dieselben Komponenten wie die öffentliche /menu-Seite.",
+      "heroSection": "Hero (oben auf der Menü-Seite)",
+      "heroBgLabel": "Hero-Hintergrundbild",
+      "heroBgHint": "Hochladen zum Ersetzen. Alte Datei unter /uploads/ wird beim Speichern entfernt, wenn ersetzt.",
+      "heroField": {
+        "title": "Seitentitel",
+        "breadcrumbHome": "Breadcrumb — Start",
+        "breadcrumbCurrent": "Breadcrumb — aktuell"
+      },
+      "categoriesSection": "Kategorien & Gerichte",
+      "addCategory": "Kategorie hinzufügen",
+      "addCategoryModalTitle": "Kategorie hinzufügen",
+      "editCategory": "Kategorie bearbeiten",
+      "addItem": "Gericht hinzufügen",
+      "addItemModalTitle": "Gericht hinzufügen",
+      "deleteCategoryConfirm": "Diese Kategorie und alle Gerichte löschen?",
+      "deleteItemConfirm": "Dieses Gericht entfernen?",
+      "emptyCategory": "Noch keine Gerichte — mindestens ein Gericht pro sichtbarer Kategorie hinzufügen.",
+      "save": "Menü-Seite speichern",
+      "saved": "Gespeichert.",
+      "previewTitle": "Live-Vorschau",
+      "categoryModalTitle": "Kategorietitel",
+      "categoryTitle": "Titel",
+      "itemModalTitle": "Gericht bearbeiten",
+      "price": "Preis (auf der Website mit € angezeigt)",
+      "modalDone": "Fertig",
+      "errors": {
+        "heroBg": "Hero-Hintergrundbild ist erforderlich.",
+        "categories": "Mindestens eine Kategorie ist erforderlich.",
+        "categoryId": "Jede Kategorie braucht eine interne ID.",
+        "categoryTitle": "Jede Kategorie braucht einen Titel in mindestens einer Sprache.",
+        "itemImage": "Jedes Gericht braucht ein Bild.",
+        "unauthorized": "Nicht angemeldet."
+      }
+    },
+    "gallery": {
+      "title": "Galerie",
+      "lead": "Galeriebilder verwalten. Klick auf das Haus-Symbol: Umriss = nicht auf der Startseite, gefüllt = eines von vier Teaser-Bildern (Reihenfolge links nach rechts). Ein fünftes ersetzt die älteste Auswahl. Entfernen aus dem Pool entfernt es auch von der Startseite, falls aktiv.",
+      "sectionTitle": "Galerie & Startseiten-Teaser",
+      "homeLine": "Startseite",
+      "uploadLabel": "Bild zum Pool hinzufügen",
+      "uploadHint": "Nach dem Upload erscheint es im Raster unten.",
+      "emptyPool": "Noch keine Bilder im Pool — Bilder hinzufügen oder Standardwerte behalten.",
+      "removeFromPool": "Aus Pool entfernen",
+      "addToHomeTitle": "Zur Startseite hinzufügen",
+      "removeFromHomeTitle": "Von Startseite entfernen",
+      "homeOrderHint": "Die Nummern auf dem Bild entsprechen der Reihenfolge auf der Startseite (1→4).",
+      "save": "Galerie speichern",
+      "saving": "Wird gespeichert…",
+      "saved": "Gespeichert.",
+      "errNeedFour": "Aktivieren Sie das Haus-Symbol bei vier Galeriebildern für die Startseite.",
+      "errMustBeInPool": "Startseiten-Bilder müssen Teil des aktuellen Galerie-Pools sein."
+    },
+    "about": {
+      "title": "Über-uns-Bereich",
+      "lead": "„Entdecken / Unsere Geschichte“ auf der Startseite: Bild sowie Unterüberschrift, Titel und Text auf Englisch, Arabisch und Deutsch."
+    },
+    "services": {
+      "title": "Leistungen-Bereich",
+      "lead": "„Warum Gäste Latana wählen“ auf der Startseite: Abschnittsüberschrift und drei Service-Karten — Texte in EN, AR und DE. Icons sind fest aus dem Template.",
+      "modalTitle": "Leistungen — Startseiten-Bereich"
+    },
+    "counter": {
+      "title": "Zahlen (Counter)",
+      "lead": "Block „Zahlen / Latana kurz“ auf der Startseite: Hintergrundbild, Überschriftentexte und vier Kennzahlen (Wert, Suffix, Bezeichnung) in EN, AR und DE.",
+      "modalTitle": "Zahlen — Counter auf der Startseite",
+      "bgImage": "Hintergrundbild",
+      "bgImageHint": "Beim Ersetzen eines Uploads wird die alte Datei unter /uploads/ beim Speichern entfernt."
+    },
+    "menuPreview": {
+      "title": "Menü-Vorschau (Startseite)",
+      "lead": "Block „Unser Menü“ auf der Startseite: vier Bilder und alle Texte (inkl. PDF-Link-Label aus den allgemeinen Site-Texten) in EN, AR und DE. Der PDF-Dateipfad kommt weiterhin aus den Site-Assets.",
+      "modalTitle": "Startseite — Unsere Menü-Vorschau"
+    },
+    "bestSellers": {
+      "title": "Bestseller (Startseite)",
+      "lead": "Live-Vorschau wie auf der Startseite. „Bearbeiten“ öffnet Überschriften oder ein Produkt im Dialog.",
+      "headings": "Überschriften",
+      "products": "Produkte"
+    },
+    "products": {
+      "title": "Entdecken / Unsere Produkte (Startseite)",
+      "lead": "Abschnittsüberschriften in einem eigenen Dialog; jeder Tab: Label bearbeiten, löschen, sortieren; jedes der drei Produkte im eigenen Dialog. Max. 4 Tabs und 3 Produkte pro Tab.",
+      "headingsSection": "Überschriften",
+      "tabsSection": "Produkt-Tabs",
+      "addTab": "Tab hinzufügen",
+      "editTabLabels": "Tab-Bezeichnungen bearbeiten",
+      "deleteTab": "Tab löschen",
+      "productsThree": "Produkte (3)",
+      "editProduct": "Produkt bearbeiten"
+    },
+    "contact": {
+      "title": "Kontakt & Standort",
+      "lead": "Telefon, WhatsApp, E-Mail, Kartenkoordinaten, Social-Profile sowie Adresse und Öffnungszeiten je Sprache. Nutzung in der Leiste unter dem Hero, im Footer und im Kartenbereich."
+    }
+  },
+  "unsaved": {
+    "title": "Ungespeicherte Änderungen",
+    "body": "Ihre Galerie-Änderungen sind noch nicht gespeichert. Speichern Sie vor dem Verlassen, verwerfen Sie sie oder bleiben Sie auf dieser Seite.",
+    "save": "Speichern",
+    "discard": "Ohne Speichern verlassen",
+    "stay": "Auf dieser Seite bleiben"
+  }
+}

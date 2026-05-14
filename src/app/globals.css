@@ -632,3 +632,50 @@ a.btn.btn-primary.btn-outline-primary:hover,
 .menu-page-products .menu-wrap .text p:last-of-type {
   margin-bottom: 0;
 }
+
+/* Blog article — CMS rich HTML */
+.blog-rich-html p {
+  margin-bottom: 1rem;
+}
+.blog-rich-html p:last-child {
+  margin-bottom: 0;
+}
+.blog-rich-html h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+.blog-rich-html h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #222;
+}
+.blog-rich-html ul,
+.blog-rich-html ol {
+  margin: 0.75rem 0;
+  padding-inline-start: 1.35rem;
+}
+.blog-rich-html li {
+  margin: 0.35rem 0;
+}
+.blog-rich-html a {
+  color: #c49b63;
+  text-decoration: underline;
+}
+.blog-rich-html a:hover {
+  opacity: 0.9;
+}
+.blog-rich-html blockquote {
+  border-inline-start: 3px solid rgba(0, 0, 0, 0.12);
+  padding-inline-start: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: rgba(26, 26, 26, 0.75);
+}
+.blog-rich-html strong {
+  font-weight: 600;
+}

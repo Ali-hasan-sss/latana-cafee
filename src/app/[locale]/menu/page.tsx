@@ -5,7 +5,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { IntroBar } from "@/components/sections/IntroBar";
 import { MenuPageHero } from "@/components/sections/MenuPageHero";
 import { MenuPricingSection } from "@/components/sections/MenuPricingSection";
-import { getAssets, getMenuPage } from "@/lib/data";
+import { getAssets } from "@/lib/data";
+import { getPublicMenuPage } from "@/lib/cms/get-public-menu-page";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function MenuPage({ params }: Props) {
   const { locale } = await params;
-  const data = getMenuPage();
+  const data = await getPublicMenuPage();
   const assets = getAssets();
 
   return (

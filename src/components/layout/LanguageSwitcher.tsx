@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { SITE_NAV_INTENT_START } from "@/components/providers/SiteLoadingProvider";
 import { routing } from "@/i18n/routing";
 
 const labels: Record<string, string> = {
@@ -25,7 +26,11 @@ export function LanguageSwitcher() {
         <button
           key={loc}
           type="button"
-          onClick={() => router.replace(pathname, { locale: loc })}
+          onClick={() => {
+            if (loc === locale) return;
+            window.dispatchEvent(new Event(SITE_NAV_INTENT_START));
+            router.replace(pathname, { locale: loc });
+          }}
           className={`min-w-[2.25rem] rounded px-2 py-1 text-xs font-semibold transition-colors ${
             locale === loc
               ? "bg-brand-primary text-white"

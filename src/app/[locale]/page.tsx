@@ -11,41 +11,31 @@ import { GallerySection } from "@/components/sections/GallerySection";
 import { ProductsTabsSection } from "@/components/sections/ProductsTabsSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { AppointmentSection } from "@/components/sections/AppointmentSection";
-import { getAssets, getCatalog } from "@/lib/data";
+import { getPublicHeroSlides } from "@/lib/cms/get-public-hero-slides";
+import { getAssets } from "@/lib/data";
 
-export default async function HomePage() {
+type Props = { params: Promise<{ locale: string }> };
+
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
   const assets = getAssets();
-  const catalog = getCatalog();
+  const heroSlides = await getPublicHeroSlides(locale);
 
   return (
     <>
       <Navbar />
       <main>
-        <HeroSlider slides={assets.heroSlides} />
+        <HeroSlider slides={heroSlides} />
         <IntroBar />
-        <AboutSection image={assets.aboutImage} />
+        <AboutSection />
         <ServicesSection />
-        <MenuPreviewSection
-          images={assets.menuPreview}
-          menuPdf={assets.menuPdf}
-        />
-        <CounterSection bg={assets.counterBg} counters={catalog.counters} />
-        <BestSellersSection
-          images={assets.bestSellers}
-          items={catalog.bestSellers}
-        />
-        <GallerySection images={assets.gallery} />
-        <ProductsTabsSection
-          productImages={assets.products}
-          tabs={catalog.productTabs}
-        />
-        <BlogSection images={assets.blog} posts={catalog.blog} />
-        <AppointmentSection
-          mapEmbedSrc={assets.cafeGoogleMapsEmbedSrc}
-          mapLat={assets.cafeMapLat}
-          mapLng={assets.cafeMapLng}
-          mapImageFallback={assets.appointmentMapPlaceholder}
-        />
+        <MenuPreviewSection />
+        <CounterSection />
+        <BestSellersSection />
+        <GallerySection />
+        <ProductsTabsSection />
+        <BlogSection />
+        <AppointmentSection mapImageFallback={assets.appointmentMapPlaceholder} />
       </main>
       <Footer thumbs={assets.footerBlogThumb} />
     </>

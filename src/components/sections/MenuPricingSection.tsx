@@ -50,7 +50,7 @@ export function MenuPricingSection({ columns, locale }: Props) {
                         />
                       </div>
                       <span className="pricing-entry__price shrink-0 pb-0.5 text-base font-semibold text-brand-primary md:text-lg">
-                        ${item.price}
+                        €{item.price}
                       </span>
                     </div>
                     <p className="pricing-entry__desc mt-2 mb-0 text-sm leading-relaxed text-white/55">

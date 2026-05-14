@@ -1,5 +1,7 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { IntroBookingForm } from "@/components/sections/IntroBookingForm";
+import { getPublicSiteContact } from "@/lib/cms/get-public-site-contact";
+import { buildWhatsAppHref } from "@/lib/cms/whatsapp-href";
 
 function IconPhone({ className }: { className?: string }) {
   return (
@@ -69,9 +71,13 @@ export async function IntroBar({
   heroOverlap = false,
 }: IntroBarProps = {}) {
   const t = await getTranslations("intro");
-  const tf = await getTranslations("footer");
+  const locale = await getLocale();
+  const contact = await getPublicSiteContact(locale);
 
-  const telHref = `tel:${tf("phone").replace(/\s/g, "")}`;
+  const telHref = contact.phone.trim()
+    ? `tel:${contact.phone.replace(/\s/g, "")}`
+    : undefined;
+  const waHref = buildWhatsAppHref(contact.whatsapp);
 
   const sectionClass = heroOverlap
     ? "ftco-intro menu-page-intro-after-hero relative z-20 w-full pt-24 md:pt-32"
@@ -97,16 +103,32 @@ export async function IntroBar({
                 <div className="text min-w-0 ps-2 md:ps-0">
                   <span className="sr-only">{t("phoneTitle")}</span>
                   <h3 className="mb-2 text-lg font-normal leading-snug text-white md:text-[1.25rem]">
-                    <a
-                      href={telHref}
-                      className="text-white no-underline transition-colors hover:text-brand-primary"
-                    >
-                      {tf("phone")}
-                    </a>
+                    {telHref ? (
+                      <a
+                        href={telHref}
+                        className="text-white no-underline transition-colors hover:text-brand-primary"
+                      >
+                        {contact.phone}
+                      </a>
+                    ) : (
+                      <span className="text-white/80">{contact.phone || "—"}</span>
+                    )}
                   </h3>
                   <p className="mb-0 text-sm leading-relaxed text-[rgba(255,255,255,0.55)]">
                     {t("phoneText")}
                   </p>
+                  {waHref ? (
+                    <p className="mb-0 mt-2 text-sm">
+                      <a
+                        href={waHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand-primary no-underline transition hover:underline"
+                      >
+                        WhatsApp
+                      </a>
+                    </p>
+                  ) : null}
                 </div>
               </div>
               <div
@@ -124,8 +146,8 @@ export async function IntroBar({
                   <h3 className="mb-2 text-lg font-normal leading-snug text-white md:text-[1.25rem]">
                     {t("addressTitle")}
                   </h3>
-                  <p className="mb-0 text-sm leading-relaxed text-[rgba(255,255,255,0.55)]">
-                    {tf("address")}
+                  <p className="mb-0 whitespace-pre-line text-sm leading-relaxed text-[rgba(255,255,255,0.55)]">
+                    {contact.address}
                   </p>
                 </div>
               </div>
@@ -144,8 +166,8 @@ export async function IntroBar({
                   <h3 className="mb-2 text-lg font-normal leading-snug text-white md:text-[1.25rem]">
                     {t("hoursTitle")}
                   </h3>
-                  <p className="mb-0 text-sm leading-relaxed text-[rgba(255,255,255,0.55)]">
-                    {t("hoursText")}
+                  <p className="mb-0 whitespace-pre-line text-sm leading-relaxed text-[rgba(255,255,255,0.55)]">
+                    {contact.hours}
                   </p>
                 </div>
               </div>

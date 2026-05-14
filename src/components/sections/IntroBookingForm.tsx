@@ -3,6 +3,10 @@
 import { useActionState, useEffect, useRef } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { submitBooking, type BookingFormState } from "@/app/actions/booking";
+import {
+  SITE_LOADING_END,
+  SITE_LOADING_START,
+} from "@/components/providers/SiteLoadingProvider";
 
 function openNativeDateTimePicker(el: HTMLInputElement) {
   if (typeof el.showPicker === "function") {
@@ -94,6 +98,14 @@ export function IntroBookingForm({ variant = "intro" }: Props) {
       formRef.current?.reset();
     }
   }, [state?.ok]);
+
+  useEffect(() => {
+    if (!pending) return;
+    window.dispatchEvent(new Event(SITE_LOADING_START));
+    return () => {
+      window.dispatchEvent(new Event(SITE_LOADING_END));
+    };
+  }, [pending]);
 
   return (
     <div
@@ -193,13 +205,30 @@ export function IntroBookingForm({ variant = "intro" }: Props) {
               />
             </div>
           </div>
-          <div className="form-group min-w-0 flex-1 md:ms-4">
+        </div>
+
+        <div className="d-md-flex flex flex-col gap-4 md:flex-row md:gap-0">
+          <div className="form-group min-w-0 flex-1">
             <input
               type="text"
               name="phone"
               placeholder={t("phone")}
               className={control}
               autoComplete="tel"
+              disabled={pending}
+            />
+          </div>
+          <div className="form-group min-w-0 flex-1 md:ms-4">
+            <input
+              type="number"
+              name="partySize"
+              min={1}
+              max={99}
+              step={1}
+              inputMode="numeric"
+              placeholder={t("partySize")}
+              aria-label={t("partySize")}
+              className={control}
               disabled={pending}
             />
           </div>

@@ -1,7 +1,8 @@
-import { getLocale, getTranslations } from "next-intl/server";
+import { getLocale } from "next-intl/server";
+import { AdminFloatingEditLink } from "@/components/admin/AdminFloatingEditLink";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getServiceCopy, getServicesData } from "@/lib/data";
+import { getPublicServicesSection } from "@/lib/cms/get-public-services-section";
 
 function IconChoices({ className }: { className?: string }) {
   return (
@@ -79,28 +80,23 @@ function ServiceIcon({ type }: { type: string }) {
 
 export async function ServicesSection() {
   const locale = await getLocale();
-  const { items } = getServicesData();
-  const ts = await getTranslations("servicesSection");
-  const tc = await getTranslations("common");
+  const { section, items } = await getPublicServicesSection(locale);
 
   return (
     <section
       id="services"
-      className="ftco-section ftco-services bg-brand-primary py-16 md:py-20 lg:py-24"
+      className="relative ftco-section ftco-services bg-brand-primary py-16 md:py-20 lg:py-24"
     >
+      <AdminFloatingEditLink href="/admin/services-section" />
       <Container>
         <SectionHeading
-          sub={ts("sub")}
-          title={ts("title")}
-          lead={ts("lead")}
-          moreHref="/menu"
-          moreLabel={tc("viewMore")}
-          moreButtonClassName="inline-flex items-center justify-center border border-[#1d150b]/40 bg-transparent px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#1d150b] no-underline transition hover:bg-[#1d150b] hover:text-brand-primary"
+          sub={section.sub}
+          title={section.title}
+          lead={section.lead}
           className="mb-14 md:mb-16 [&_h2]:text-[#1d150b] [&_p]:text-[#1d150b]/88 [&_span]:text-[#1d150b]"
         />
         <div className="row flex flex-wrap justify-center gap-y-12 md:-mx-3 md:gap-y-0">
           {items.map((item, i) => {
-            const copy = getServiceCopy(item, locale);
             return (
               <div
                 key={item.id}
@@ -120,10 +116,10 @@ export async function ServicesSection() {
                   </div>
                   <div className="media-body px-2">
                     <h3 className="heading mb-3 text-lg font-semibold text-[#1d150b] md:text-xl">
-                      {copy.title}
+                      {item.title}
                     </h3>
                     <p className="mb-0 text-sm leading-relaxed text-[#1d150b]/90 md:text-[15px]">
-                      {copy.text}
+                      {item.text}
                     </p>
                   </div>
                 </div>

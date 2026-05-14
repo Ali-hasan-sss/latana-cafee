@@ -23,7 +23,8 @@
   "common": {
     "viewMore": "Mehr anzeigen",
     "viewMap": "In Google Maps öffnen",
-    "pdfMenu": "PDF-Speisekarte"
+    "pdfMenu": "PDF-Speisekarte",
+    "loading": "Wird geladen…"
   },
   "servicesSection": {
     "sub": "Service",
@@ -87,12 +88,13 @@
     "date": "Datum",
     "time": "Uhrzeit",
     "phone": "Telefon",
+    "partySize": "Personen",
     "message": "Nachricht",
     "submit": "Termin",
     "bookingSuccess": "Danke — Ihre Anfrage wurde gesendet. Wir melden uns bald.",
     "bookingError": "Die Nachricht konnte nicht gesendet werden. Bitte später erneut versuchen oder anrufen.",
     "bookingConfig": "Die Buchungs-E-Mail ist auf dem Server noch nicht eingerichtet.",
-    "bookingValidation": "Bitte Vorname, Nachname, Telefon und Datum ausfüllen.",
+    "bookingValidation": "Bitte Vorname, Nachname, Telefon, Datum und Personenzahl (1–99) ausfüllen.",
     "bookingSpam": "Anfrage konnte nicht gesendet werden.",
     "bookingSending": "Wird gesendet…"
   },
@@ -298,12 +300,20 @@
     "aboutTitle": "Über uns",
     "aboutText": "Latana Café — Specialty-Kaffee, einfaches Essen und ein teamorientiertes Kiez-Café.",
     "blogTitle": "Aktuelle Beiträge",
-    "servicesTitle": "Leistungen",
-    "services": {
-      "cooked": "Küchen-Klassiker",
-      "deliver": "Zum Mitnehmen",
-      "quality": "Qualitätszutaten",
-      "mixed": "Saison-Specials"
+    "impressum": {
+      "title": "Impressum",
+      "gesellschaftHeading": "Gesellschaft",
+      "companyLine": "Bright Future DA GmbH / HRB 268592 B Amtsgericht Charlottenburg.",
+      "emailLabel": "Email:",
+      "phoneLabel": "Telefon:",
+      "sitzHeading": "Sitz der Gesellschaft",
+      "sitzLine": "Berlin",
+      "stNrLabel": "St.Nr:",
+      "stNrValue": "27/241/50471",
+      "ustIdLabel": "USt-ID:",
+      "ustIdValue": "DE451424964",
+      "gfLabel": "Geschäftsführer:",
+      "gfName": "Mouhanad Dawood"
     },
     "questionsTitle": "Fragen?",
     "address": "Rahel-Hirsch-Straße 10, 10557 Berlin",

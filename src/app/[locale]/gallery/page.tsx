@@ -6,6 +6,7 @@ import { GalleryLightboxGrid } from "@/components/sections/GalleryLightboxGrid";
 import { IntroBar } from "@/components/sections/IntroBar";
 import { MenuPageHero } from "@/components/sections/MenuPageHero";
 import { getAssets, getGalleryPage } from "@/lib/data";
+import { getPublicGallerySettings } from "@/lib/cms/get-public-gallery-settings";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function GalleryPage({ params }: Props) {
   const { locale } = await params;
   const page = getGalleryPage();
+  const { pool } = await getPublicGallerySettings();
   const assets = getAssets();
 
   return (
@@ -33,7 +35,7 @@ export default async function GalleryPage({ params }: Props) {
           locale={locale}
         />
         <IntroBar />
-        <GalleryLightboxGrid images={assets.gallery} />
+        <GalleryLightboxGrid images={pool} />
       </main>
       <Footer thumbs={assets.footerBlogThumb} />
     </>

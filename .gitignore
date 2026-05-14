@@ -28,3 +28,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Admin uploads (keep folder via public/uploads/.gitkeep)
+/public/uploads/*
+!/public/uploads/.gitkeep

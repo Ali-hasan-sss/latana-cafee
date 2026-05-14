@@ -1,25 +1,20 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { AdminFloatingEditLink } from "@/components/admin/AdminFloatingEditLink";
+import { getPublicGallerySettings } from "@/lib/cms/get-public-gallery-settings";
 
-type Props = {
-  images: string[];
-};
-
-export async function GallerySection({ images }: Props) {
+export async function GallerySection() {
   const t = await getTranslations("gallery");
-  const tg = await getTranslations("gallerySection");
-  const tc = await getTranslations("common");
+  const { homeTeaser } = await getPublicGallerySettings();
 
   return (
-    <section aria-label={t("open")}>
-    
+    <section aria-label={t("open")} className="relative">
+      <AdminFloatingEditLink href="/admin/gallery" label="Edit gallery" />
       <div className="grid grid-cols-2 md:grid-cols-4">
-        {images.map((src, i) => (
+        {homeTeaser.map((src, i) => (
           <Link
-            key={src}
+            key={`${src}-${i}`}
             href="/gallery"
             className="group relative block aspect-square overflow-hidden"
             data-aos="zoom-in"

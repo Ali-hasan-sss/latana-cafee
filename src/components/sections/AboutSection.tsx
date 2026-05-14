@@ -1,28 +1,25 @@
-import { getTranslations, getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { AdminFloatingEditLink } from "@/components/admin/AdminFloatingEditLink";
+import { getPublicAboutSection } from "@/lib/cms/get-public-about-section";
 
-type Props = {
-  image: string;
-};
-
-export async function AboutSection({ image }: Props) {
-  const t = await getTranslations("about");
-  const tc = await getTranslations("common");
+export async function AboutSection() {
+  const t = await getTranslations("common");
   const locale = await getLocale();
   const isRtl = locale === "ar";
+  const data = await getPublicAboutSection(locale);
 
   return (
-    <section id="about" className="ftco-about d-md-flex flex flex-col md:flex-row">
-      {/* one-half img — خلفية الغلاف مثل القالب */}
+    <section id="about" className="relative ftco-about d-md-flex flex flex-col md:flex-row">
+      <AdminFloatingEditLink href="/admin/about-section" />
       <div
         className="one-half img relative min-h-[380px] w-full bg-cover bg-center bg-no-repeat md:min-h-[min(100vh,640px)] md:w-1/2"
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${data.imageSrc})` }}
         data-aos="fade-up"
         data-aos-duration="800"
         aria-hidden
       />
 
-      {/* one-half — نص مع overlap */}
       <div
         className="one-half relative z-[1] flex w-full items-stretch  md:min-h-[min(100vh,640px)] md:w-1/2 md:items-center"
         data-aos="fade-up"
@@ -43,27 +40,25 @@ export async function AboutSection({ image }: Props) {
           >
             {isRtl ? (
               <span className="subheading mb-2 block text-lg font-semibold tracking-wide text-brand-primary md:text-xl">
-                {t("sub")}
+                {data.sub}
               </span>
             ) : (
               <span className="subheading mb-2 block font-accent text-3xl text-brand-primary md:text-4xl">
-                {t("sub")}
+                {data.sub}
               </span>
             )}
             <h2 className="mb-4 font-display text-3xl font-semibold text-brand-light md:text-4xl">
-              {t("title")}
+              {data.title}
             </h2>
           </div>
           <div>
-            <p className="mb-0 text-base leading-[1.85] text-brand-light md:text-lg">
-              {t("text")}
-            </p>
+            <p className="mb-0 text-base leading-[1.85] text-brand-light md:text-lg">{data.text}</p>
             <div className="mt-8">
               <Link
                 href="/blog"
                 className="inline-flex border border-brand-primary bg-transparent px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary no-underline transition hover:bg-brand-primary hover:text-white"
               >
-                {tc("viewMore")}
+                {t("viewMore")}
               </Link>
             </div>
           </div>

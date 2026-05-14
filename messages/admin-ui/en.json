@@ -1,0 +1,393 @@
+{
+  "shell": {
+    "brand": "Latana Cafe",
+    "badge": "Admin",
+    "viewSite": "View site",
+    "signOut": "Sign out",
+    "content": "Content",
+    "language": "Language",
+    "openNav": "Open navigation menu",
+    "closeNav": "Close navigation menu"
+  },
+  "cmsLocales": {
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "overview": "Overview",
+    "homePage": "Home page",
+    "heroSlider": "Hero slider",
+    "aboutSection": "About section",
+    "servicesSection": "Services section",
+    "menuPreview": "Menu preview (home)",
+    "menuPage": "Menu page (/menu)",
+    "counter": "Numbers (counter)",
+    "bestSellers": "Best sellers (home)",
+    "products": "Discover / products (home)",
+    "blog": "Blog articles",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "meta": {
+    "overview": "Overview · Admin",
+    "heroSlider": "Hero slider · Admin",
+    "aboutSection": "About section · Admin",
+    "servicesSection": "Services section · Admin",
+    "menuPreview": "Menu preview · Admin",
+    "menuPage": "Menu page · Admin",
+    "counter": "Numbers (counter) · Admin",
+    "bestSellers": "Best sellers · Admin",
+    "products": "Discover / products · Admin",
+    "blog": "Blog articles · Admin",
+    "gallery": "Gallery · Admin",
+    "contact": "Contact · Admin",
+    "login": "Admin sign in · Latana Cafe"
+  },
+  "overview": {
+    "title": "Overview",
+    "lead": "Choose a section in the sidebar to edit site content.",
+    "cards": {
+      "heroSlider": {
+        "title": "Hero slider",
+        "desc": "Home hero images and headline / copy for English, Arabic, and German."
+      },
+      "aboutSection": {
+        "title": "About section",
+        "desc": "Discover / Our story — image and copy in EN, AR, and DE."
+      },
+      "servicesSection": {
+        "title": "Services section",
+        "desc": "Home services block — heading and three cards in EN, AR, and DE."
+      },
+      "menuPreview": {
+        "title": "Menu preview (home)",
+        "desc": "Our Menu section — four images and copy in EN, AR, and DE."
+      },
+      "menuPage": {
+        "title": "Menu page (/menu)",
+        "desc": "Categories, dishes, hero and breadcrumbs — same layout as the public menu page."
+      },
+      "counter": {
+        "title": "Numbers (counter)",
+        "desc": "Home stats block — background, heading, and four counters in EN, AR, and DE."
+      },
+      "bestSellers": {
+        "title": "Best sellers (home)",
+        "desc": "Four featured products — images, prices, and copy in EN, AR, and DE."
+      },
+      "products": {
+        "title": "Discover / Our products (home)",
+        "desc": "Product tabs (max 4), three items per tab, headings and copy in EN, AR, and DE."
+      },
+      "blog": {
+        "title": "Blog articles",
+        "desc": "Add, edit, and delete posts in EN, AR, and DE — rich text body with emoji bar."
+      },
+      "gallery": {
+        "title": "Gallery",
+        "desc": "Full gallery pool, uploads, and the four home teaser images."
+      },
+      "contact": {
+        "title": "Contact & location",
+        "desc": "Phone, WhatsApp, address, hours, map, email, and social links for the site chrome."
+      }
+    }
+  },
+  "login": {
+    "metaTitle": "Admin sign in · Latana Cafe",
+    "title": "Admin sign in",
+    "subtitle": "Latana Cafe — content management",
+    "username": "Username",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "placeholderUsername": "admin",
+    "errors": {
+      "required": "Username and password are required.",
+      "invalid": "Invalid username or password.",
+      "config": "AUTH_SECRET is missing or too short (min 16 characters). Check server configuration."
+    }
+  },
+  "shared": {
+    "copyByLanguage": "Copy by language",
+    "sectionHeading": "Section heading",
+    "subheading": "Subheading",
+    "title": "Title",
+    "lead": "Lead",
+    "text": "Text",
+    "bodyText": "Body text",
+    "enTitle": "EN title",
+    "cardsCount": "Cards",
+    "image": "Image",
+    "snapshotImage": "Image",
+    "editInModal": "Edit in modal",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving…",
+    "serviceCards": "Service cards",
+    "cardN": "Card {n}",
+    "statistics": "Statistics",
+    "statN": "Stat {n}",
+    "fourCountersHint": "Four counters (fixed order). Value is a number; suffix is optional text after the number (e.g. +).",
+    "value": "Value",
+    "suffix": "Suffix (e.g. +)",
+    "labelForTab": "Label ({tab})",
+    "previewImagesFour": "Preview images (4)",
+    "uploadReplaceHint": "Replacing an uploaded file removes the previous file under /uploads/ on save. Built-in /images/ paths are left on disk.",
+    "imageN": "Image {n}",
+    "imageHintRequired": "Required — used in the 2×2 grid on the home page.",
+    "primaryCta": "Primary button label",
+    "gridAriaLabel": "Image grid aria-label",
+    "articleCopy": "Article copy",
+    "productCopy": "Product copy",
+    "addressHoursByLang": "Address & hours by language",
+    "address": "Address",
+    "openingHours": "Opening hours",
+    "hoursHint": "Use line breaks between weekday and weekend blocks if you like.",
+    "hoursPlaceholder": "Monday to Friday from 08:00 am to 06:00 pm\nSaturday and Sunday from 09:00 am to 05:00 pm",
+    "headingsEn": "Headings (EN)",
+    "headingsLead": "Subheading, title, and lead for each language (English, Arabic, and German).",
+    "langEn": "English",
+    "langAr": "Arabic",
+    "langDe": "German",
+    "firstStat": "First stat",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "map": "Map",
+    "productImageHint": "Clear to fall back to the default bundled image on save.",
+    "productFormIntro": "Image, price, and name/description per language. Replacing an upload removes the old file under /uploads/ when you save.",
+    "priceDisplay": "Price (display, e.g. 5.90)",
+    "name": "Name",
+    "description": "Description",
+    "dateDisplay": "Date (display)",
+    "excerpt": "Excerpt",
+    "body": "Body",
+    "urlSlug": "URL slug",
+    "commentCount": "Comment count (display)",
+    "publishedAt": "Published at (sorting — newest first)",
+    "coverImage": "Cover image",
+    "coverHint": "Shown on cards and in the article header.",
+    "inlineGallery": "Inline image gallery",
+    "removeFromGallery": "Remove from gallery",
+    "addGalleryImage": "Add gallery image",
+    "addGalleryHint": "After upload completes, the image is appended to the gallery.",
+    "pendingUpload": "Waiting for upload",
+    "galleryImageN": "Image {n}",
+    "replaceSlotHint": "Upload a file to replace this image.",
+    "subheadingDiscover": "Subheading (e.g. Discover)",
+    "titleOurStory": "Title (e.g. Our story)",
+    "aboutModalTitle": "About — Discover / Our story",
+    "uploadSectionImageHint": "Upload replaces the image path. Previous files under /uploads/ are removed on save when replaced.",
+    "whatsappLabel": "WhatsApp (number with country code)",
+    "whatsappPlaceholder": "+49 …",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "embedUrl": "Google Maps embed URL (optional)",
+    "embedPlaceholder": "https://www.google.com/maps/embed?pb=…",
+    "embedHelp": "Use only the Embed a map URL from Google Maps (Share → Embed a map). Normal /maps/place links are blocked in iframes (X-Frame-Options). Leave empty to use latitude / longitude instead.",
+    "socialLinks": "Social links",
+    "socialPlaceholder": "https://…",
+    "contactModalTitle": "Contact & location",
+    "snapshotPhone": "Phone",
+    "snapshotWhatsApp": "WhatsApp",
+    "snapshotEmail": "Email",
+    "snapshotMap": "Map",
+    "headingsModalProducts": "Discover / Our products — headings",
+    "headingsModalBestSellers": "Edit section headings",
+    "tabLabelsTitle": "Tab labels · {tabId}",
+    "addProductTab": "Add product tab",
+    "addProductTabHint": "Up to 4 tabs. The internal id is derived from the English title when possible; three product slots are created with default images (edit each product in its own modal).",
+    "englishTabTitle": "English tab title",
+    "arabicTabTitle": "Arabic tab title",
+    "germanTabTitle": "German tab title",
+    "englishTabTitlePh": "e.g. Snacks",
+    "addTab": "Add tab",
+    "productItemTitle": "Product {n} · {tabId} · {itemKey}",
+    "bestSellerItemTitle": "Edit product {n} · {id}",
+    "deleteTabConfirm": "Delete this tab and its three products? Uploaded images under /uploads/ will be removed when safe."
+  },
+  "common": {
+    "saveFailed": "Save failed.",
+    "saved": "Saved.",
+    "saveFailedShort": "Save failed.",
+    "couldNotReorder": "Could not reorder.",
+    "couldNotAdd": "Could not add.",
+    "deleteFailed": "Delete failed.",
+    "invalidServerResponse": "Invalid server response.",
+    "networkUploadError": "Network error while uploading.",
+    "uploadFailedStatus": "Upload failed ({status})",
+    "removeSlideConfirm": "Remove this slide?",
+    "edit": "Edit",
+    "delete": "Delete",
+    "up": "Up",
+    "down": "Down",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "add": "Add",
+    "commentsShort": "Comments",
+    "dash": "—"
+  },
+  "upload": {
+    "defaultLabel": "File",
+    "uploading": "Uploading…",
+    "dropPrompt": "Drop a file here or click to choose",
+    "formats": "JPEG, PNG, WebP, GIF, or PDF. Images are compressed on the server; stored file must be ≤ 10 MB (larger originals allowed up to the server limit).",
+    "outputTooLarge": "The file is still larger than 10 MB after processing. Try a smaller or simpler image.",
+    "rawTooLarge": "This file is too large to upload (server safety limit).",
+    "invalidImage": "Could not read or compress this image. Try another format or file."
+  },
+  "modal": {
+    "closeAria": "Close"
+  },
+  "messages": {
+    "saved": "Saved."
+  },
+  "richEditor": {
+    "bulletList": "• List",
+    "orderedList": "1. List",
+    "link": "Link",
+    "undo": "Undo",
+    "redo": "Redo",
+    "emoji": "Emoji",
+    "insertEmoji": "Insert {emoji}",
+    "linkPrompt": "URL",
+    "linkDefault": "https://",
+    "defaultPlaceholder": "Article body…"
+  },
+  "panels": {
+    "heroSlider": {
+      "title": "Hero slider",
+      "lead": "Background image plus headline and body copy per language. Changes apply to the home page after save.",
+      "addSlide": "Add slide",
+      "tablePreview": "Preview",
+      "tableImage": "Image",
+      "tableEnTitle": "EN title",
+      "tableActions": "Actions",
+      "emptyTable": "No slides yet. Add one or they will fall back to bundled defaults until you save.",
+      "modalAddTitle": "Add hero slide",
+      "modalEditTitle": "Edit hero slide",
+      "saveSlide": "Save slide",
+      "heroImage": "Hero image",
+      "heroImageHint": "Images are saved under public/uploads. Replace by uploading again.",
+      "titleLabel": "Title",
+      "textLabel": "Text"
+    },
+    "blog": {
+      "title": "Blog articles",
+      "lead": "Articles as cards. Edit in the modal — gallery images are uploaded files, not manual URLs.",
+      "addPost": "Add article",
+      "deleteConfirm": "Delete article \"{title}\"? This cannot be undone.",
+      "commentsLabel": "Comments",
+      "editModalTitle": "Edit article · {slug}",
+      "introRich": "Title, date, excerpt, and rich body per language. Upload cover and gallery images from your device only (no manual URLs). Old /uploads/ files are removed when replaced on save.",
+      "inlineGalleryTitle": "Inline image gallery",
+      "articleCopyHeading": "Article copy"
+    },
+    "menuPage": {
+      "title": "Menu page",
+      "lead": "Edit the hero, breadcrumbs, categories and dishes. The preview below uses the same components as the public /menu page.",
+      "heroSection": "Hero (top of menu page)",
+      "heroBgLabel": "Hero background image",
+      "heroBgHint": "Upload to replace. Previous file under /uploads/ is removed on save when replaced.",
+      "heroField": {
+        "title": "Page title",
+        "breadcrumbHome": "Breadcrumb — home",
+        "breadcrumbCurrent": "Breadcrumb — current"
+      },
+      "categoriesSection": "Categories & dishes",
+      "addCategory": "Add category",
+      "addCategoryModalTitle": "Add category",
+      "editCategory": "Edit category",
+      "addItem": "Add dish",
+      "addItemModalTitle": "Add dish",
+      "deleteCategoryConfirm": "Delete this category and all its dishes?",
+      "deleteItemConfirm": "Remove this dish?",
+      "emptyCategory": "No dishes yet — add at least one dish per category you want visible.",
+      "save": "Save menu page",
+      "saved": "Saved.",
+      "previewTitle": "Live preview",
+      "categoryModalTitle": "Category titles",
+      "categoryTitle": "Title",
+      "itemModalTitle": "Edit dish",
+      "price": "Price (shown with € on the site)",
+      "modalDone": "Done",
+      "errors": {
+        "heroBg": "Hero background image is required.",
+        "categories": "At least one category is required.",
+        "categoryId": "Each category needs an internal id.",
+        "categoryTitle": "Each category needs a title in at least one language.",
+        "itemImage": "Every dish must have an image.",
+        "unauthorized": "Not signed in."
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "lead": "Manage gallery images. Click the home icon: outline = not on home, filled = one of four home teasers (left-to-right order). Picking a fifth replaces the oldest pick. Removing from the pool also removes it from home if selected.",
+      "sectionTitle": "Gallery & home teasers",
+      "homeLine": "Home",
+      "uploadLabel": "Add image to pool",
+      "uploadHint": "After upload it appears in the grid below.",
+      "emptyPool": "No images in the pool yet — add images or keep the defaults.",
+      "removeFromPool": "Remove from pool",
+      "addToHomeTitle": "Add to home",
+      "removeFromHomeTitle": "Remove from home",
+      "homeOrderHint": "Numbers on the image match the order on the home page (1→4).",
+      "save": "Save gallery",
+      "saving": "Saving…",
+      "saved": "Saved.",
+      "errNeedFour": "Turn on the home icon on four gallery images for the home page.",
+      "errMustBeInPool": "Home images must be part of the current gallery pool."
+    },
+    "about": {
+      "title": "About section",
+      "lead": "“Discover / Our story” on the home page: image plus subheading, title, and body for English, Arabic, and German."
+    },
+    "services": {
+      "title": "Services section",
+      "lead": "“Why guests choose Latana” on the home page: section heading and three service cards — copy for English, Arabic, and German. Icons are fixed from the site template.",
+      "modalTitle": "Services — home section"
+    },
+    "counter": {
+      "title": "Numbers (counter)",
+      "lead": "Home “Numbers / Latana in brief” block: background image, heading copy, and four stats (value, suffix, label) for English, Arabic, and German.",
+      "modalTitle": "Numbers — home counter section",
+      "bgImage": "Background image",
+      "bgImageHint": "Replacing an upload removes the old file under /uploads/ on save."
+    },
+    "menuPreview": {
+      "title": "Menu preview (home)",
+      "lead": "“Our Menu” block on the home page: four images and all copy (including the PDF link label from common site messages) in English, Arabic, and German. The PDF file path still comes from site assets.",
+      "modalTitle": "Home — Our Menu preview"
+    },
+    "bestSellers": {
+      "title": "Best sellers (home)",
+      "lead": "Live preview like the home page. Press Edit to open headings or any product in a modal.",
+      "headings": "Headings",
+      "products": "Products"
+    },
+    "products": {
+      "title": "Discover / Our products (home)",
+      "lead": "Section headings in a separate modal; each tab has label editing and delete/reorder; each of the three products has its own modal. Max 4 tabs and 3 products per tab.",
+      "headingsSection": "Headings",
+      "tabsSection": "Product tabs",
+      "addTab": "Add tab",
+      "editTabLabels": "Edit tab labels",
+      "deleteTab": "Delete tab",
+      "productsThree": "Products (3)",
+      "editProduct": "Edit product"
+    },
+    "contact": {
+      "title": "Contact & location",
+      "lead": "Phone, WhatsApp, email, map coordinates, social profiles, and address / opening hours for each language. This data powers the intro bar under the hero, the footer, and the map section."
+    }
+  },
+  "unsaved": {
+    "title": "Unsaved changes",
+    "body": "Your gallery edits are not saved yet. Save before leaving, discard them, or stay on this page.",
+    "save": "Save",
+    "discard": "Leave without saving",
+    "stay": "Stay on this page"
+  }
+}

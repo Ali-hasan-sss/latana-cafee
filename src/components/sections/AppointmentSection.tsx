@@ -1,11 +1,9 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { IntroBookingForm } from "@/components/sections/IntroBookingForm";
+import { getPublicSiteContact } from "@/lib/cms/get-public-site-contact";
 
 type Props = {
-  mapEmbedSrc: string;
-  mapLat: number | null;
-  mapLng: number | null;
   mapImageFallback: string;
 };
 
@@ -32,17 +30,18 @@ function resolveMapIframeSrc(
   return null;
 }
 
-export async function AppointmentSection({
-  mapEmbedSrc,
-  mapLat,
-  mapLng,
-  mapImageFallback,
-}: Props) {
+export async function AppointmentSection({ mapImageFallback }: Props) {
   const t = await getTranslations("appointment");
-  const tf = await getTranslations("footer");
   const tc = await getTranslations("common");
-  const iframeSrc = resolveMapIframeSrc(mapEmbedSrc, mapLat, mapLng);
-  const mapSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(tf("address"))}`;
+  const locale = await getLocale();
+  const contact = await getPublicSiteContact(locale);
+
+  const iframeSrc = resolveMapIframeSrc(
+    contact.mapEmbedSrc,
+    contact.mapLat,
+    contact.mapLng,
+  );
+  const mapSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`;
 
   return (
     <section

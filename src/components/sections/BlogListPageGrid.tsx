@@ -1,7 +1,7 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
-import { getBlogArticlesData, getCatalog } from "@/lib/data";
+import { getPublicBlogPostCards } from "@/lib/cms/get-public-blog-posts";
 
 function IconChat({ className }: { className?: string }) {
   return (
@@ -23,67 +23,50 @@ function IconChat({ className }: { className?: string }) {
 
 export async function BlogListPageGrid() {
   const t = await getTranslations("blog");
-  const tp = await getTranslations("blog.posts");
-  const catalog = getCatalog();
-  const articles = getBlogArticlesData().articles;
-
-  const slugFor = (postKey: string) =>
-    articles.find((a) => a.postKey === postKey)?.slug;
+  const locale = await getLocale();
+  const cards = await getPublicBlogPostCards(locale);
 
   return (
     <section className="blog-section bg-brand-darker py-16 md:py-24">
       <Container>
         <header className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
-          <h1 className="font-display text-3xl font-semibold text-white md:text-4xl">
-            {t("title")}
-          </h1>
-          <p className="mt-4 text-base leading-relaxed text-white/75 md:text-lg">
-            {t("lead")}
-          </p>
+          <h1 className="font-display text-3xl font-semibold text-white md:text-4xl">{t("title")}</h1>
+          <p className="mt-4 text-base leading-relaxed text-white/75 md:text-lg">{t("lead")}</p>
         </header>
         <div className="row -mx-3 flex flex-wrap">
-          {catalog.blog.map((post, i) => {
-            const slug = slugFor(post.postKey);
-            if (!slug) return null;
-            const art = articles.find((a) => a.postKey === post.postKey);
-            const cover = art?.images[0] ?? "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg";
-            const title = tp(`${post.postKey}.title`);
+          {cards.map((post, i) => {
+            const href = `/blog/${post.slug}`;
+            const cover = post.coverImageSrc;
             return (
               <div
-                key={post.postKey}
-                className="col-md-4 flex w-full px-3 md:w-1/3"
+                key={post.id}
+                className="col-md-4 my-4 flex w-full px-3  md:w-1/3"
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay={String(i * 120)}
               >
-                <article className="blog-entry flex w-full flex-col self-stretch">
+                <article className="blog-entry flex h-full w-full flex-col self-stretch overflow-hidden rounded-2xl border border-white/10 bg-black/25 shadow-[0_16px_48px_rgba(0,0,0,0.35)] transition hover:border-brand-primary/25 hover:shadow-[0_20px_56px_rgba(0,0,0,0.45)]">
                   <Link
-                    href={`/blog/${slug}`}
+                    href={href}
                     className="block-20 relative block min-h-[220px] w-full overflow-hidden md:min-h-[260px]"
                     style={{ backgroundImage: `url(${cover})` }}
-                    aria-label={title}
+                    aria-label={post.title}
                   />
-                  <div className="text block flex flex-1 flex-col py-4">
+                  <div className="text block flex flex-1 flex-col px-1 py-4 sm:px-2">
                     <div className="meta">
                       <div>
-                        <Link href={`/blog/${slug}`} className="no-underline">
-                          {tp(`${post.postKey}.date`)}
+                        <Link href={href} className="no-underline">
+                          {post.date}
                         </Link>
                       </div>
                       <div>
-                        <Link href={`/blog/${slug}`} className="no-underline">
+                        <Link href={href} className="no-underline">
                           {t("admin")}
                         </Link>
                       </div>
                       <div>
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="meta-chat no-underline"
-                        >
-                          <span
-                            className="icon-chat inline-flex align-middle"
-                            aria-hidden
-                          >
+                        <Link href={href} className="meta-chat no-underline">
+                          <span className="icon-chat inline-flex align-middle" aria-hidden>
                             <IconChat className="h-3.5 w-3.5" />
                           </span>{" "}
                           {post.comments}
@@ -91,14 +74,14 @@ export async function BlogListPageGrid() {
                       </div>
                     </div>
                     <h2 className="heading mt-2 text-lg md:text-xl">
-                      <Link href={`/blog/${slug}`} className="no-underline">
-                        {title}
+                      <Link href={href} className="no-underline">
+                        {post.title}
                       </Link>
                     </h2>
-                    <p className="mt-1 flex-1">{tp(`${post.postKey}.excerpt`)}</p>
+                    <p className="mt-1 flex-1">{post.excerpt}</p>
                     <div className="mt-4">
                       <Link
-                        href={`/blog/${slug}`}
+                        href={href}
                         className="inline-flex items-center text-xs font-semibold uppercase tracking-[0.14em] text-brand-primary no-underline transition hover:text-brand-primary-hover"
                       >
                         {t("readMore")}

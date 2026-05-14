@@ -2,6 +2,10 @@
 
 import { getTranslations } from "next-intl/server";
 import {
+  buildBookingMailHtml,
+  buildBookingMailText,
+} from "@/lib/booking-email-template";
+import {
   createBookingTransporter,
   getBookingFrom,
   getBookingRecipient,
@@ -33,8 +37,19 @@ export async function submitBooking(
   const time = clean(formData.get("time"));
   const phone = clean(formData.get("phone"));
   const message = clean(formData.get("message"));
+  const partyRaw = clean(formData.get("partySize"));
+  const partySize = Number.parseInt(partyRaw, 10);
 
-  if (!firstName || !lastName || !phone || !date) {
+  if (
+    !firstName ||
+    !lastName ||
+    !phone ||
+    !date ||
+    !partyRaw ||
+    !Number.isFinite(partySize) ||
+    partySize < 1 ||
+    partySize > 99
+  ) {
     return { ok: false, message: t("bookingValidation") };
   }
 
@@ -45,17 +60,23 @@ export async function submitBooking(
     return { ok: false, message: t("bookingConfig") };
   }
 
-  const subject = `[Latana Cafe] ${t("bookTitle")} — ${firstName} ${lastName}`;
-  const text = [
-    `${t("bookTitle")}`,
-    `---`,
-    `${t("firstName")}: ${firstName}`,
-    `${t("lastName")}: ${lastName}`,
-    `${t("date")}: ${date}`,
-    `${t("time")}: ${time || "—"}`,
-    `${t("phone")}: ${phone}`,
-    `${t("message")}: ${message || "—"}`,
-  ].join("\n");
+  const subject = `[Latana Cafe] ${t("bookTitle")} — ${firstName} ${lastName} (${partySize})`;
+
+  const rows = [
+    { label: t("firstName"), value: firstName },
+    { label: t("lastName"), value: lastName },
+    { label: t("partySize"), value: String(partySize) },
+    { label: t("date"), value: date },
+    { label: t("time"), value: time || "—" },
+    { label: t("phone"), value: phone },
+    { label: t("message"), value: message || "—" },
+  ];
+
+  const text = [`${t("bookTitle")}`, "---", buildBookingMailText(rows)].join("\n");
+  const html = buildBookingMailHtml({
+    heading: t("bookTitle"),
+    rows,
+  });
 
   try {
     await transporter.sendMail({
@@ -63,6 +84,7 @@ export async function submitBooking(
       to,
       subject,
       text,
+      html,
     });
   } catch {
     return { ok: false, message: t("bookingError") };

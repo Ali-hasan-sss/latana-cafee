@@ -6,10 +6,10 @@ import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
-import type { Assets } from "@/lib/data";
+import type { HeroSlidePublic } from "@/lib/cms/hero-slider-types";
 
 type Props = {
-  slides: Assets["heroSlides"];
+  slides: HeroSlidePublic[];
 };
 
 const bgEase = [0.22, 1, 0.36, 1] as const;
@@ -55,23 +55,30 @@ function ChevronRight({ className }: { className?: string }) {
 export function HeroSlider({ slides }: Props) {
   const t = useTranslations("hero");
   const locale = useLocale();
-  const messages = t.raw("slides") as { title: string; text: string }[];
   const [index, setIndex] = useState(0);
 
   const len = slides.length;
   const goPrev = useCallback(() => {
+    if (len < 1) return;
     setIndex((i) => (i - 1 + len) % len);
   }, [len]);
   const goNext = useCallback(() => {
+    if (len < 1) return;
     setIndex((i) => (i + 1) % len);
   }, [len]);
 
   useEffect(() => {
+    if (len < 1) return;
     const id = window.setInterval(goNext, 6500);
     return () => window.clearInterval(id);
-  }, [goNext]);
+  }, [goNext, len]);
 
-  const src = slides[index];
+  if (len < 1) {
+    return null;
+  }
+
+  const current = slides[index]!;
+  const src = current.src;
 
   return (
     <section
@@ -88,14 +95,23 @@ export function HeroSlider({ slides }: Props) {
           exit={{ opacity: 0 }}
           transition={{ duration: slideDuration, ease: bgEase }}
         >
-          <Image
-            src={src}
-            alt=""
-            fill
-            priority={index === 0}
-            className="object-cover"
-            sizes="100vw"
-          />
+          {/^https?:\/\//i.test(src) ? (
+            // eslint-disable-next-line @next/next/no-img-element -- remote hero URLs from CMS
+            <img
+              src={src}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          ) : (
+            <Image
+              src={src}
+              alt=""
+              fill
+              priority={index === 0}
+              className="object-cover"
+              sizes="100vw"
+            />
+          )}
           <div className="overlay absolute inset-0 bg-black/35" aria-hidden />
         </motion.div>
       </AnimatePresence>
@@ -125,11 +141,11 @@ export function HeroSlider({ slides }: Props) {
                   )}
 
                   <h1 className="mb-4 font-display text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl xl:text-[3.5rem]">
-                    {messages[index]?.title}
+                    {current.title}
                   </h1>
 
                   <p className="mb-4 max-w-2xl text-base leading-relaxed text-white/90 md:mx-auto md:mb-8 md:text-lg">
-                    {messages[index]?.text}
+                    {current.text}
                   </p>
 
                   <p className="mb-0 flex flex-wrap items-center justify-center gap-3 md:gap-4">

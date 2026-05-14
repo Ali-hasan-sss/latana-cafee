@@ -1,29 +1,24 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
-import { getBlogArticleBySlug, getBlogPage } from "@/lib/data";
+import { getBlogPage } from "@/lib/data";
 import { pickLocalized } from "@/lib/menu-page-i18n";
 
 type Props = {
-  slug: string;
   locale: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  coverImageSrc: string;
 };
 
-export async function BlogArticleHero({ slug, locale }: Props) {
-  const article = getBlogArticleBySlug(slug);
-  if (!article) return null;
-
-  const tPost = await getTranslations({
-    locale,
-    namespace: `blog.posts.${article.postKey}`,
-  });
+export async function BlogArticleHero({ locale, title, date, excerpt, coverImageSrc }: Props) {
   const tBlog = await getTranslations({ locale, namespace: "blog" });
   const page = getBlogPage();
   const homeLabel = pickLocalized(page.hero.breadcrumbHome, locale);
   const blogLabel = pickLocalized(page.hero.breadcrumbCurrent, locale);
   const cover =
-    article.images[0] ??
-    "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg";
+    coverImageSrc.trim() || "/images/2f0ab6f7-bfb7-44bd-9d16-96419ba2020f.jpg.jpeg";
 
   return (
     <section className="menu-page-slider relative w-full">
@@ -56,19 +51,13 @@ export async function BlogArticleHero({ slug, locale }: Props) {
               <span className="text-white/45" aria-hidden>
                 /
               </span>
-              <span className="line-clamp-1 text-brand-primary">
-                {tPost("title")}
-              </span>
+              <span className="line-clamp-1 text-brand-primary">{title}</span>
             </nav>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/80">
-              {tPost("date")}
-            </p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/80">{date}</p>
             <h1 className="max-w-4xl font-display text-2xl font-semibold uppercase leading-tight tracking-[0.06em] text-white md:text-3xl lg:text-4xl">
-              {tPost("title")}
+              {title}
             </h1>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/85 md:text-base">
-              {tPost("excerpt")}
-            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/85 md:text-base">{excerpt}</p>
             <p className="mt-3 text-xs text-white/60">{tBlog("admin")}</p>
           </Container>
         </div>

@@ -1,14 +1,9 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { AdminFloatingEditLink } from "@/components/admin/AdminFloatingEditLink";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getBlogArticlesData } from "@/lib/data";
-import type { Catalog } from "@/lib/data";
-
-type Props = {
-  images: string[];
-  posts: Catalog["blog"];
-};
+import { getPublicBlogPostCardsHome } from "@/lib/cms/get-public-blog-posts";
 
 function IconChat({ className }: { className?: string }) {
   return (
@@ -28,16 +23,15 @@ function IconChat({ className }: { className?: string }) {
   );
 }
 
-export async function BlogSection({ images, posts }: Props) {
+export async function BlogSection() {
   const t = await getTranslations("blog");
-  const tp = await getTranslations("blog.posts");
   const tc = await getTranslations("common");
-  const articles = getBlogArticlesData().articles;
-  const slugFor = (postKey: string) =>
-    articles.find((a) => a.postKey === postKey)?.slug;
+  const locale = await getLocale();
+  const cards = await getPublicBlogPostCardsHome(locale);
 
   return (
-    <section id="blog" className="blog-section py-16 md:py-24">
+    <section id="blog" className="blog-section relative py-16 md:py-24">
+      <AdminFloatingEditLink href="/admin/blog-posts" label="Edit blog" />
       <Container>
         <SectionHeading
           title={t("title")}
@@ -48,31 +42,28 @@ export async function BlogSection({ images, posts }: Props) {
           moreButtonClassName="inline-flex items-center justify-center border border-white/70 bg-transparent px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white no-underline transition hover:bg-white hover:text-brand-dark"
         />
         <div className="row -mx-3 flex flex-wrap">
-          {posts.map((post, i) => {
-            const slug = slugFor(post.postKey);
-            const href = slug ? `/blog/${slug}` : "/blog";
-            const art = articles.find((a) => a.postKey === post.postKey);
-            const src = art?.images[0] ?? images[i] ?? images[0];
-            const title = tp(`${post.postKey}.title`);
+          {cards.map((post, i) => {
+            const href = `/blog/${post.slug}`;
+            const src = post.coverImageSrc;
             return (
               <div
-                key={post.postKey}
+                key={post.id}
                 className="col-md-4 flex w-full px-3 md:w-1/3 ftco-animate fadeInUp ftco-animated"
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay={String(i * 120)}
               >
-                <div className="blog-entry flex w-full flex-col self-stretch">
+                <div className="blog-entry flex h-full w-full flex-col self-stretch overflow-hidden rounded-2xl border border-white/10 bg-black/20 shadow-[0_12px_40px_rgba(0,0,0,0.25)] transition hover:border-white/20">
                   <Link
                     href={href}
                     className="block-20"
                     style={{ backgroundImage: `url(${src})` }}
-                    aria-label={title}
+                    aria-label={post.title}
                   />
                   <div className="text block py-4">
                     <div className="meta">
                       <div>
-                        <Link href={href}>{tp(`${post.postKey}.date`)}</Link>
+                        <Link href={href}>{post.date}</Link>
                       </div>
                       <div>
                         <Link href={href}>{t("admin")}</Link>
@@ -87,9 +78,9 @@ export async function BlogSection({ images, posts }: Props) {
                       </div>
                     </div>
                     <h3 className="heading mt-2">
-                      <Link href={href}>{title}</Link>
+                      <Link href={href}>{post.title}</Link>
                     </h3>
-                    <p>{tp(`${post.postKey}.excerpt`)}</p>
+                    <p>{post.excerpt}</p>
                   </div>
                 </div>
               </div>

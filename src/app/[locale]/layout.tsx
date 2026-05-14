@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -9,8 +8,9 @@ import {
   Playfair_Display,
 } from "next/font/google";
 import { AosProvider } from "@/components/providers/AosProvider";
+import { DocumentLang } from "@/components/providers/DocumentLang";
+import { SiteLoadingProvider } from "@/components/providers/SiteLoadingProvider";
 import { routing } from "@/i18n/routing";
-import "../globals.css";
 
 const sans = Noto_Sans({
   subsets: ["latin", "latin-ext"],
@@ -36,11 +36,6 @@ const accent = Great_Vibes({
   variable: "--font-accent",
 });
 
-export const metadata: Metadata = {
-  title: "Latana Cafe",
-  description: "Specialty coffee, simple food, and neighborhood hospitality.",
-};
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -62,17 +57,19 @@ export default async function LocaleLayout({
     locale === "ar" ? sansArabic.className : sans.className;
 
   return (
-    <html
-      lang={locale}
-      dir={locale === "ar" ? "rtl" : "ltr"}
-      className={`${sans.variable} ${sansArabic.variable} ${display.variable} ${accent.variable}`}
-      suppressHydrationWarning
-    >
-      <body className={`${bodyFont} min-h-screen text-brand-dark antialiased`}>
-        <NextIntlClientProvider messages={messages}>
-          <AosProvider>{children}</AosProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <DocumentLang locale={locale} />
+      <NextIntlClientProvider messages={messages}>
+        <SiteLoadingProvider>
+          <AosProvider>
+            <div
+              className={`${sans.variable} ${sansArabic.variable} ${display.variable} ${accent.variable} ${bodyFont} min-h-screen text-brand-dark antialiased`}
+            >
+              {children}
+            </div>
+          </AosProvider>
+        </SiteLoadingProvider>
+      </NextIntlClientProvider>
+    </>
   );
 }

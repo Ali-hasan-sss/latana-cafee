@@ -23,7 +23,8 @@
   "common": {
     "viewMore": "View more",
     "viewMap": "Open in Google Maps",
-    "pdfMenu": "Download PDF menu"
+    "pdfMenu": "Download PDF menu",
+    "loading": "Loading…"
   },
   "servicesSection": {
     "sub": "Service",
@@ -87,12 +88,13 @@
     "date": "Date",
     "time": "Time",
     "phone": "Phone",
+    "partySize": "Number of guests",
     "message": "Message",
     "submit": "Appointment",
     "bookingSuccess": "Thank you — your request was sent. We will contact you shortly.",
     "bookingError": "Could not send the message. Please try again later or call us.",
     "bookingConfig": "Booking email is not configured on the server yet.",
-    "bookingValidation": "Please fill in first name, last name, phone, and date.",
+    "bookingValidation": "Please fill in first name, last name, phone, date, and number of guests (1–99).",
     "bookingSpam": "Request could not be sent.",
     "bookingSending": "Sending…"
   },
@@ -298,12 +300,20 @@
     "aboutTitle": "About us",
     "aboutText": "Latana Cafe — specialty coffee, simple food, and a neighborhood-focused team.",
     "blogTitle": "Recent blog",
-    "servicesTitle": "Services",
-    "services": {
-      "cooked": "Kitchen favorites",
-      "deliver": "Takeaway",
-      "quality": "Quality ingredients",
-      "mixed": "Seasonal specials"
+    "impressum": {
+      "title": "Legal notice (Impressum)",
+      "gesellschaftHeading": "Company",
+      "companyLine": "Bright Future DA GmbH / HRB 268592 B, Amtsgericht Charlottenburg.",
+      "emailLabel": "Email:",
+      "phoneLabel": "Phone:",
+      "sitzHeading": "Registered office",
+      "sitzLine": "Berlin",
+      "stNrLabel": "St.Nr.:",
+      "stNrValue": "27/241/50471",
+      "ustIdLabel": "USt-ID:",
+      "ustIdValue": "DE451424964",
+      "gfLabel": "Managing director:",
+      "gfName": "Mouhanad Dawood"
     },
     "questionsTitle": "Questions?",
     "address": "Rahel-Hirsch-Straße 10, 10557 Berlin",

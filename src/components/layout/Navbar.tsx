@@ -150,21 +150,6 @@ export function Navbar() {
               <li className="nav-item flex items-center border-b border-white/10 px-3 py-2 md:border-0 md:py-0 md:ps-2 md:pe-1">
                 <LanguageSwitcher />
               </li>
-
-              <li className="nav-item cart md:flex md:items-center">
-                <Link
-                  href="/menu"
-                  className="nav-link relative flex items-center gap-2 px-3 py-3 text-white/90 no-underline hover:text-brand-primary md:py-[1.35rem]"
-                  onClick={closeMobile}
-                >
-                  <span className="relative inline-flex">
-                    <CartIcon className="h-[22px] w-[22px]" />
-                    <span className="bag absolute -end-2 -top-2 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-brand-primary px-1 text-[10px] font-bold leading-none text-white">
-                      <small>{t("cartCount")}</small>
-                    </span>
-                  </span>
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

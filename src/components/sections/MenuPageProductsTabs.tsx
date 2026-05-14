@@ -112,7 +112,7 @@ export function MenuPageProductsTabs({ intro, addToCart, tabs }: Props) {
                               </h3>
                               <p>{pickLocalized(item.desc, locale)}</p>
                               <p className="price">
-                                <span>${item.price}</span>
+                                <span>€{item.price}</span>
                               </p>
                               <p>
                                 <a

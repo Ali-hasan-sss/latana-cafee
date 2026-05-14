@@ -23,7 +23,8 @@
   "common": {
     "viewMore": "عرض المزيد",
     "viewMap": "افتح في خرائط جوجل",
-    "pdfMenu": "تحميل قائمة PDF"
+    "pdfMenu": "تحميل قائمة PDF",
+    "loading": "جاري التحميل…"
   },
   "servicesSection": {
     "sub": "الخدمة",
@@ -87,12 +88,13 @@
     "date": "التاريخ",
     "time": "الوقت",
     "phone": "الهاتف",
+    "partySize": "عدد الأشخاص",
     "message": "الرسالة",
     "submit": "موعد",
     "bookingSuccess": "شكراً — تم إرسال طلبك. سنتواصل معك قريباً.",
     "bookingError": "تعذّر إرسال الرسالة. حاول لاحقاً أو اتصل بنا.",
     "bookingConfig": "لم يُضبط البريد للحجوزات على الخادم بعد.",
-    "bookingValidation": "يرجى تعبئة الاسم الأول واسم العائلة والهاتف والتاريخ.",
+    "bookingValidation": "يرجى تعبئة الاسم الأول واسم العائلة والهاتف والتاريخ وعدد الأشخاص (١–٩٩).",
     "bookingSpam": "تعذّر إرسال الطلب.",
     "bookingSending": "جاري الإرسال…"
   },
@@ -298,12 +300,20 @@
     "aboutTitle": "من نحن",
     "aboutText": "لاتانا كافيه — قهوة سبشلتي، طعام بسيط، وفريق يهتم بالحي.",
     "blogTitle": "أحدث التدوينات",
-    "servicesTitle": "الخدمات",
-    "services": {
-      "cooked": "مأكولات المطبخ",
-      "deliver": "الطلب الخارجي",
-      "quality": "مكونات بجودة",
-      "mixed": "عروض موسمية"
+    "impressum": {
+      "title": "البيانات القانونية (Impressum)",
+      "gesellschaftHeading": "الشركة",
+      "companyLine": "Bright Future DA GmbH / HRB 268592 B Amtsgericht Charlottenburg.",
+      "emailLabel": "البريد الإلكتروني:",
+      "phoneLabel": "الهاتف:",
+      "sitzHeading": "مقر الشركة",
+      "sitzLine": "برلين",
+      "stNrLabel": "رقم الضريبة:",
+      "stNrValue": "27/241/50471",
+      "ustIdLabel": "رقم ضريبة القيمة المضافة:",
+      "ustIdValue": "DE451424964",
+      "gfLabel": "المدير العام:",
+      "gfName": "Mouhanad Dawood"
     },
     "questionsTitle": "أسئلة؟",
     "address": "Rahel-Hirsch-Straße 10، 10557 برلين",
