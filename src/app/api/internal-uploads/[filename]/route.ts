@@ -5,7 +5,7 @@ import { getPublicUploadsRootDir } from "@/lib/paths/public-uploads-root";
 
 export const runtime = "nodejs";
 
-/** Filenames produced by the admin upload API (UUID + webp/pdf). */
+/** Same filenames as `POST /api/admin/upload` (UUID + webp/pdf). */
 const SAFE_NAME = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\.(webp|pdf)$/i;
 
 const MIME: Record<string, string> = {
@@ -14,15 +14,21 @@ const MIME: Record<string, string> = {
 };
 
 /**
- * Serves `/uploads/…` from disk so uploads work even when a reverse proxy mis-handles
- * `public/` static files; still only allows known-safe filenames.
+ * Serves upload bytes. Invoked internally via `beforeFiles` rewrite from `/uploads/:filename`
+ * so requests are not swallowed by the `public/` layer (which can 404 before App routes run).
  */
 export async function GET(
   _request: Request,
-  context: { params: Promise<{ path?: string[] }> },
+  context: { params: Promise<{ filename: string }> },
 ) {
-  const { path: segments } = await context.params;
-  const name = segments?.join("/") ?? "";
+  const { filename: raw } = await context.params;
+  let name = raw;
+  try {
+    name = decodeURIComponent(raw);
+  } catch {
+    return new NextResponse(null, { status: 404 });
+  }
+
   if (!name || name.includes("/") || name.includes("..") || name.startsWith(".")) {
     return new NextResponse(null, { status: 404 });
   }
