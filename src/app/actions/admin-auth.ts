@@ -3,6 +3,7 @@
 import bcrypt from "bcryptjs";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { resolveCookieSecureFlag } from "@/lib/auth/cookie-secure";
 import {
   ADMIN_SESSION_COOKIE,
   signAdminToken,
@@ -43,9 +44,10 @@ export async function adminLogin(
   }
 
   const store = await cookies();
+  const secure = await resolveCookieSecureFlag();
   store.set(ADMIN_SESSION_COOKIE, token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure,
     sameSite: "lax",
     path: "/",
     maxAge: 60 * 60 * 24 * 7,
@@ -56,6 +58,6 @@ export async function adminLogin(
 
 export async function adminLogout(_formData: FormData): Promise<void> {
   const store = await cookies();
-  store.delete(ADMIN_SESSION_COOKIE);
+  store.delete({ name: ADMIN_SESSION_COOKIE, path: "/" });
   redirect("/admin/login");
 }
