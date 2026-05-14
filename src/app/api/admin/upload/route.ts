@@ -10,6 +10,7 @@ import {
   AdminImageProcessError,
   processAdminUploadImage,
 } from "@/lib/cms/process-admin-upload-image";
+import { getPublicUploadsRootDir } from "@/lib/paths/public-uploads-root";
 
 export const runtime = "nodejs";
 
@@ -83,7 +84,7 @@ export async function POST(request: Request) {
     }
     const filename = `${crypto.randomUUID()}.pdf`;
     const relativeUrl = `/uploads/${filename}`;
-    const dir = path.join(process.cwd(), "public", "uploads");
+    const dir = getPublicUploadsRootDir();
     const absolutePath = path.join(dir, filename);
     await mkdir(dir, { recursive: true });
     await writeFile(absolutePath, buffer);
@@ -107,7 +108,7 @@ export async function POST(request: Request) {
 
   const filename = `${crypto.randomUUID()}.webp`;
   const relativeUrl = `/uploads/${filename}`;
-  const dir = path.join(process.cwd(), "public", "uploads");
+  const dir = getPublicUploadsRootDir();
   const absolutePath = path.join(dir, filename);
 
   await mkdir(dir, { recursive: true });

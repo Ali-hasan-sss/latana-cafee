@@ -1,5 +1,6 @@
-import { unlink } from "fs/promises";
 import path from "path";
+import { unlink } from "fs/promises";
+import { getPublicUploadsRootDir } from "@/lib/paths/public-uploads-root";
 
 /** Deletes a file under `public/uploads/` only (safe path). */
 export async function deletePublicUploadIfSafe(relativeUrl: string): Promise<void> {
@@ -7,10 +8,14 @@ export async function deletePublicUploadIfSafe(relativeUrl: string): Promise<voi
   if (!p.startsWith("/uploads/") || p.includes("..") || p.includes("\\")) {
     return;
   }
-  const rel = p.replace(/^\//, "");
-  const abs = path.join(process.cwd(), "public", rel);
-  const uploadsRoot = path.join(process.cwd(), "public", "uploads");
-  if (!abs.startsWith(uploadsRoot)) {
+  const rel = p.replace(/^\/?uploads\/?/, "").replace(/^\/+/, "");
+  if (!rel || rel.includes("..")) return;
+
+  const uploadsRoot = getPublicUploadsRootDir();
+  const abs = path.resolve(uploadsRoot, rel);
+  const resolvedRoot = path.resolve(uploadsRoot);
+  const relCheck = path.relative(resolvedRoot, abs);
+  if (relCheck.startsWith("..") || path.isAbsolute(relCheck)) {
     return;
   }
   await unlink(abs).catch(() => {

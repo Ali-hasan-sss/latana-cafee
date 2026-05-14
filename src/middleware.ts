@@ -18,6 +18,10 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname.startsWith("/uploads/")) {
+    return NextResponse.next();
+  }
+
   if (pathname.startsWith("/admin")) {
     if (pathname === "/admin/login") {
       const token = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
