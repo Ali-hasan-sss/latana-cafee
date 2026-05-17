@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { saveMenuPageSettings } from "@/app/actions/menu-page-settings-admin";
 import { AdminFileUpload } from "@/components/admin/AdminFileUpload";
 import { AdminModal } from "@/components/admin/AdminModal";
+import { MenuExcelToolbar } from "@/components/admin/MenuExcelToolbar";
 import { MenuPageHero } from "@/components/sections/MenuPageHero";
 import { MenuPricingSection } from "@/components/sections/MenuPricingSection";
 import type { MenuPageCmsDocument } from "@/lib/cms/menu-page-cms-types";
@@ -260,6 +261,14 @@ export function MenuPageAdminPanel({ initial, defaultItemImage }: Props) {
           </div>
         </div>
       </section>
+
+      <MenuExcelToolbar
+        onImport={(pricingColumns) => {
+          setOk(false);
+          setError(null);
+          setDraft((d) => ({ ...d, pricingColumns }));
+        }}
+      />
 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h2 className="text-sm font-semibold text-white/80">{t("panels.menuPage.categoriesSection")}</h2>

@@ -7,7 +7,6 @@ import type { AdminUiLocale } from "./get-admin-locale";
 
 const bundles: Record<AdminUiLocale, typeof adminUiEn> = {
   en: adminUiEn,
-  ar: adminUiAr,
   de: adminUiDe,
 };
 

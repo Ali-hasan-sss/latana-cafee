@@ -313,6 +313,25 @@
       "itemModalTitle": "Edit dish",
       "price": "Price (shown with € on the site)",
       "modalDone": "Done",
+      "excelTitle": "Excel — bulk menu",
+      "excelLead": "Download an empty template, fill categories and dishes (one row per dish), then import. Image links are not part of the Excel file; imported dishes use the default image and can be changed in the editor. Click Save menu page when done.",
+      "excel": {
+        "downloadTemplate": "Download empty template",
+        "exportCurrent": "Export current menu",
+        "import": "Import from Excel",
+        "downloading": "Downloading…",
+        "importing": "Importing…",
+        "importConfirm": "Replace all categories and dishes with the Excel file? Hero settings are kept. You must still click Save.",
+        "imported": "Imported into the editor — review and click Save menu page.",
+        "errors": {
+          "download": "Could not download the file.",
+          "parse": "Could not read the Excel file.",
+          "excelNoSheet": "No worksheet found in the file.",
+          "excelEmpty": "The file has no menu rows.",
+          "excelMissingDishName": "Dish names are optional; add a description or price when leaving names empty.",
+          "excelMissingCategoryTitle": "Each row needs a category title in at least one language."
+        }
+      },
       "errors": {
         "heroBg": "Hero background image is required.",
         "categories": "At least one category is required.",

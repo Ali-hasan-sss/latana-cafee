@@ -313,6 +313,25 @@
       "itemModalTitle": "Gericht bearbeiten",
       "price": "Preis (auf der Website mit € angezeigt)",
       "modalDone": "Fertig",
+      "excelTitle": "Excel — Menü gesammelt importieren",
+      "excelLead": "Leere Vorlage herunterladen, Kategorien und Gerichte ausfüllen (eine Zeile pro Gericht) und anschließend importieren. Bildlinks sind nicht Teil der Excel-Datei; importierte Gerichte nutzen das Standardbild und können im Editor geändert werden. Danach Menü-Seite speichern.",
+      "excel": {
+        "downloadTemplate": "Leere Vorlage herunterladen",
+        "exportCurrent": "Aktuelles Menü exportieren",
+        "import": "Aus Excel importieren",
+        "downloading": "Wird heruntergeladen…",
+        "importing": "Wird importiert…",
+        "importConfirm": "Alle Kategorien und Gerichte durch die Excel-Datei ersetzen? Hero-Einstellungen bleiben erhalten. Danach muss noch gespeichert werden.",
+        "imported": "In den Editor importiert — bitte prüfen und Menü-Seite speichern.",
+        "errors": {
+          "download": "Datei konnte nicht heruntergeladen werden.",
+          "parse": "Excel-Datei konnte nicht gelesen werden.",
+          "excelNoSheet": "Keine Tabelle in der Datei gefunden.",
+          "excelEmpty": "Die Datei enthält keine Menüzeilen.",
+          "excelMissingDishName": "Gerichtsnamen sind optional; bei leeren Namen bitte Beschreibung oder Preis angeben.",
+          "excelMissingCategoryTitle": "Jede Zeile braucht einen Kategorietitel in mindestens einer Sprache."
+        }
+      },
       "errors": {
         "heroBg": "Hero-Hintergrundbild ist erforderlich.",
         "categories": "Mindestens eine Kategorie ist erforderlich.",

@@ -7,7 +7,6 @@ import { routing } from "@/i18n/routing";
 
 const labels: Record<string, string> = {
   en: "EN",
-  ar: "ع",
   de: "DE",
 };
 
