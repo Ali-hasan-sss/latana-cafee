@@ -20,6 +20,10 @@ function clean(v: FormDataEntryValue | null): string {
   return (v?.toString() ?? "").trim();
 }
 
+function isValidEmail(value: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
 export async function submitBooking(
   _prevState: BookingFormState,
   formData: FormData,
@@ -36,6 +40,7 @@ export async function submitBooking(
   const date = clean(formData.get("date"));
   const time = clean(formData.get("time"));
   const phone = clean(formData.get("phone"));
+  const email = clean(formData.get("email"));
   const message = clean(formData.get("message"));
   const partyRaw = clean(formData.get("partySize"));
   const partySize = Number.parseInt(partyRaw, 10);
@@ -44,6 +49,7 @@ export async function submitBooking(
     !firstName ||
     !lastName ||
     !phone ||
+    !email ||
     !date ||
     !partyRaw ||
     !Number.isFinite(partySize) ||
@@ -51,6 +57,10 @@ export async function submitBooking(
     partySize > 99
   ) {
     return { ok: false, message: t("bookingValidation") };
+  }
+
+  if (!isValidEmail(email)) {
+    return { ok: false, message: t("bookingEmailInvalid") };
   }
 
   const transporter = createBookingTransporter();
@@ -69,6 +79,7 @@ export async function submitBooking(
     { label: t("date"), value: date },
     { label: t("time"), value: time || "—" },
     { label: t("phone"), value: phone },
+    { label: t("email"), value: email },
     { label: t("message"), value: message || "—" },
   ];
 
@@ -82,6 +93,7 @@ export async function submitBooking(
     await transporter.sendMail({
       from: getBookingFrom(),
       to,
+      replyTo: email,
       subject,
       text,
       html,

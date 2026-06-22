@@ -220,6 +220,19 @@ export function IntroBookingForm({ variant = "intro" }: Props) {
           </div>
           <div className="form-group min-w-0 flex-1 md:ms-4">
             <input
+              type="email"
+              name="email"
+              placeholder={t("email")}
+              className={control}
+              autoComplete="email"
+              disabled={pending}
+            />
+          </div>
+        </div>
+
+        <div className="d-md-flex flex flex-col gap-4 md:flex-row md:gap-0">
+          <div className="form-group min-w-0 flex-1 md:max-w-[50%]">
+            <input
               type="number"
               name="partySize"
               min={1}
